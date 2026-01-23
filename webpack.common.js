@@ -7,7 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // AUTO-DETECT ALL HTML FILES IN THE ROOT (excluding node_modules)
-const htmlFiles = globSync("./*.html");
+const htmlFiles = globSync("./src/*.html");
 
 // Generate HTML plugins automatically
 const htmlPlugins = htmlFiles.map((file) => {
@@ -20,7 +20,7 @@ const htmlPlugins = htmlFiles.map((file) => {
 
 export default {
     entry: {
-        main: './src/main.js',
+        main: './src/js/main.js',
     },
 
     output: {
