@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | CP Polyplast</title>
+
+    <link rel="icon" type="image/png" href="assets/polyplast_logo_1768477028508.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#248fce',
+                            dark: '#1a7a9c',
+                            light: '#e1f5fe',
+                        },
+                        secondary: {
+                            DEFAULT: '#f3f4f6',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="font-sans antialiased text-slate-800 bg-white selection:bg-primary selection:text-white">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white border-b border-slate-100">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between gap-4">
+            <!-- Logo -->
+            <div class="flex items-center shrink-0">
+                <a href="index.html" class="block">
+                    <img src="assets/image 2 (1).png" alt="Chennai Polyplast" class="h-8 md:h-12">
+                </a>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="hidden lg:flex flex-1 items-center justify-center space-x-10 px-8">
+                <a href="index.html" class="nav-link text-slate-900">Home</a>
+                <a href="products.html" class="nav-link text-slate-900 active !text-primary">Products</a>
+                <a href="industry.html" class="nav-link text-slate-900">Industry</a>
+                <a href="download.html" class="nav-link text-slate-900">Download</a>
+                <a href="contact.html" class="nav-link text-slate-900">Contact</a>
+            </nav>
+
+            <!-- Action Area -->
+            <div class="flex items-center space-x-1 md:space-x-8 shrink-0">
+                <button class="p-2 hover:bg-slate-50 rounded-full group">
+                    <i data-lucide="search" class="w-6 h-6 text-slate-900"></i>
+                </button>
+                <div class="hidden xl:flex items-center space-x-2">
+                    <i data-lucide="phone" class="w-5 h-5 text-primary"></i>
+                    <a href="tel:+91654328903"
+                        class="text-primary font-medium border-b border-primary/30 hover:border-primary transition-all">+91
+                        654328903</a>
+                </div>
+                <button
+                    class="hidden sm:block bg-primary text-white font-bold text-xs tracking-wider px-6 py-4 rounded-md uppercase hover:bg-primary-dark transition-colors shadow-sm">
+                    DOWNLOAD BROCHURE
+                </button>
+
+                <!-- Mobile Menu Toggle -->
+                <button id="mobile-menu-toggle" class="lg:hidden p-2 hover:bg-slate-50 rounded-full group">
+                    <i data-lucide="menu" class="w-7 h-7 text-slate-900"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+        class="fixed inset-0 z-[100] bg-white translate-x-full transition-transform duration-500 lg:hidden overflow-y-auto">
+        <div class="container mx-auto px-4 py-8 flex flex-col h-full min-h-screen">
+            <!-- Mobile Menu Header -->
+            <div class="flex items-center justify-between mb-16">
+                <a href="index.html" class="block">
+                    <img src="assets/image 2 (1).png" alt="Chennai Polyplast" class="h-8">
+                </a>
+                <button id="mobile-menu-close"
+                    class="p-2 hover:bg-slate-50 rounded-full group transition-all active:scale-90">
+                    <i data-lucide="x" class="w-8 h-8 text-slate-900"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="flex flex-col space-y-6 mb-16">
+                <a href="index.html"
+                    class="text-3xl font-bold text-slate-900 hover:text-primary transition-colors flex items-center justify-between group">
+                    <span>Home</span>
+                    <i data-lucide="arrow-right"
+                        class="w-6 h-6 opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all"></i>
+                </a>
+                <a href="products.html"
+                    class="text-3xl font-bold text-primary transition-colors flex items-center justify-between group">
+                    <span>Products</span>
+                    <i data-lucide="arrow-right" class="w-6 h-6 opacity-100 transition-all"></i>
+                </a>
+                <a href="industry.html"
+                    class="text-3xl font-bold text-slate-900 hover:text-primary transition-colors flex items-center justify-between group">
+                    <span>Industry</span>
+                    <i data-lucide="arrow-right"
+                        class="w-6 h-6 opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all"></i>
+                </a>
+                <a href="download.html"
+                    class="text-3xl font-bold text-slate-900 hover:text-primary transition-colors flex items-center justify-between group">
+                    <span>Download</span>
+                    <i data-lucide="arrow-right"
+                        class="w-6 h-6 opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all"></i>
+                </a>
+                <a href="contact.html"
+                    class="text-3xl font-bold text-slate-900 hover:text-primary transition-colors flex items-center justify-between group">
+                    <span>Contact</span>
+                    <i data-lucide="arrow-right"
+                        class="w-6 h-6 opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all"></i>
+                </a>
+            </nav>
+
+            <!-- Support & Action -->
+            <div class="mt-auto pt-10 border-t border-slate-100 space-y-8">
+                <div class="space-y-4">
+                    <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Support Line</p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                            <i data-lucide="phone" class="w-6 h-6 text-primary"></i>
+                        </div>
+                        <a href="tel:+91654328903" class="text-2xl font-bold text-slate-900">+91 654328903</a>
+                    </div>
+                </div>
+                <button
+                    class="w-full bg-primary text-white font-bold py-6 rounded-2xl uppercase tracking-widest shadow-xl shadow-primary/20 hover:bg-primary-dark transition-all transform active:scale-[0.98]">
+                    DOWNLOAD BROCHURE
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Breadcrumb Banner -->
+    <section class="bg-[#F0F9FF] py-5 border-b border-slate-100">
+        <div class="container mx-auto px-4 max-w-7xl flex items-center text-[14px]">
+            <a href="index.html" class="text-slate-400 hover:text-primary transition-colors">Home</a>
+            <i data-lucide="chevron-right" class="w-4 h-4 mx-3 text-slate-400"></i>
+            <a href="products.html" class="text-slate-400 hover:text-primary transition-colors">Products</a>
+            <i data-lucide="chevron-right" class="w-4 h-4 mx-3 text-slate-400"></i>
+            <div class="w-[1px] h-5 bg-slate-300 mx-4"></div>
+            <span class="text-slate-700 font-bold uppercase tracking-tight">HDPE – POLYETHYLENE SHEETS & RODS</span>
+        </div>
+    </section>
+
+    <!-- Product Details Section -->
+    <main class="py-16 md:py-24">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <div class="flex flex-col lg:flex-row gap-12 lg:gap-20">
+                <!-- Left: Gallery -->
+                <div class="lg:w-1/2 flex flex-row gap-6">
+                    <!-- Vertical Thumbnails -->
+                    <div class="hidden md:flex flex-col gap-4 shrink-0">
+                        <img src="assets/Rectangle 78.png" alt="Thumbnail"
+                            class="w-[100px] h-[100px] object-cover cursor-pointer border border-slate-200">
+                        <img src="assets/Rectangle 79.png" alt="Thumbnail"
+                            class="w-[100px] h-[100px] object-cover cursor-pointer border border-slate-200">
+                        <img src="assets/Rectangle 80.png" alt="Thumbnail"
+                            class="w-[100px] h-[100px] object-cover cursor-pointer border border-slate-200">
+                        <img src="assets/Rectangle 81.png" alt="Thumbnail"
+                            class="w-[100px] h-[100px] object-cover cursor-pointer border border-slate-200">
+                    </div>
+
+                    <!-- Main Image -->
+                    <div class="flex-1">
+                        <img src="assets/Rectangle 38.png" alt="Product"
+                            class="w-full h-auto max-h-[550px] object-contain bg-slate-50 rounded-[4px]">
+                    </div>
+                </div>
+
+                <!-- Right: Product Information -->
+                <div class="lg:w-1/2 space-y-6">
+                    <h1
+                        class="text-[32px] md:text-[38px] font-bold text-[#000000] leading-tight uppercase tracking-tight">
+                        HDPE – POLYETHYLENE SHEETS & RODS
+                    </h1>
+
+                    <div class="space-y-3 pt-4 font-poppins">
+                        <h3 class="text-[20px] font-medium text-[#1a1a1a] leading-[100%]">Product Description</h3>
+                        <p class="text-slate-600 text-[14px] leading-relaxed font-normal">
+                            High Density Polyethylene Roc (HDPE) is a FDA Approved material of the highest quality with
+                            excellent impact resistance. HDPE has high tensile strength, low moisture absorption and is
+                            chemical and corrosion resistant. It is a light weight material that is non-toxic and
+                            non-staining and used in a variety of applications and industries.
+                        </p>
+                    </div>
+
+                    <div class="space-y-3 font-poppins">
+                        <h3 class="text-[20px] font-medium text-[#1a1a1a] leading-[100%]">Sizes Available</h3>
+                        <ul class="space-y-1.5 text-slate-600 text-[14px] leading-relaxed font-normal">
+                            <li class="flex items-start gap-2">
+                                <span class="text-slate-900 mt-1">•</span>
+                                Thickness available from: 1mm to 200m
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-slate-900 mt-1">•</span>
+                                Sizes available: 1mt x 2mt. 122m x 2.44mt. 1.2mt x 2mt, 1.5mt x 3mt
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-slate-900 mt-1">•</span>
+                                Rods Dia available from: 16mm dia to 400mm dia
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-slate-900 mt-1">•</span>
+                                Squares available from 16mm sq to 150mm sq
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-slate-900 mt-1">•</span>
+                                Profiles available as per customer requirement
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="space-y-3 font-poppins">
+                        <h3 class="text-[20px] font-medium text-[#1a1a1a] leading-[100%]">Typical Application</h3>
+                        <ul class="space-y-1.5 text-slate-600 text-[14px] leading-relaxed font-normal">
+                            <li class="flex items-start gap-2">
+                                <span class="text-slate-900 mt-1">•</span>
+                                FDA/USDA food handling guidelines
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-slate-900 mt-1">•</span>
+                                Light-weight
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-slate-900 mt-1">•</span>
+                                Chemical and corrosion resistant
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-slate-900 mt-1">•</span>
+                                Low moisture absorption
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-slate-900 mt-1">•</span>
+                                High tensile strengur
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-slate-900 mt-1">•</span>
+                                Excellent impact resistance
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabs Section -->
+            <div class="mt-20 font-poppins">
+                <div class="flex flex-wrap justify-center items-center gap-x-0 mb-10 max-w-6xl mx-auto">
+                    <div
+                        class="property-tab px-10 py-4 font-medium cursor-pointer border-b-2 border-primary text-primary transition-all">
+                        Mechanical Properties</div>
+                    <div class="w-[1.5px] h-10 bg-slate-200 mx-10 hidden md:block"></div>
+                    <div
+                        class="property-tab px-10 py-4 font-medium cursor-pointer text-[#BCC1CF] hover:text-primary transition-all">
+                        Thermal Performance</div>
+                    <div class="w-[1.5px] h-10 bg-slate-200 mx-10 hidden md:block"></div>
+                    <div
+                        class="property-tab px-10 py-4 font-medium cursor-pointer text-[#BCC1CF] hover:text-primary transition-all">
+                        Electrical Performance</div>
+                </div>
+
+                <div class="overflow-x-auto shadow-sm border border-slate-100 rounded-xl">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-primary text-white">
+                                <th class="p-5 font-semibold text-[16px]">Performance & Test Conditions</th>
+                                <th class="p-5 font-semibold text-[16px] text-center border-l border-white/20">Test
+                                    Method</th>
+                                <th class="p-5 font-semibold text-[16px] text-center border-l border-white/20">Unit</th>
+                                <th class="p-5 font-semibold text-[16px] text-center border-l border-white/20">Typical
+                                    Values</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-[14px] text-slate-600">
+                            <tr class="border-b border-slate-100">
+                                <td class="p-5">Recdied impact strength of cantilever beam 23°C</td>
+                                <td class="p-5 text-center border-l border-slate-100">ASTM D256</td>
+                                <td class="p-5 text-center border-l border-slate-100">J/m</td>
+                                <td class="p-5 text-center border-l border-slate-100">160</td>
+                            </tr>
+                            <tr class="bg-[#F7F8FC] border-b border-slate-100">
+                                <td class="p-5">Tensile strength at yield (50mm/min)</td>
+                                <td class="p-5 text-center border-l border-slate-100">ASTM D638</td>
+                                <td class="p-5 text-center border-l border-slate-100">MPa</td>
+                                <td class="p-5 text-center border-l border-slate-100">22.5</td>
+                            </tr>
+                            <tr class="border-b border-slate-100">
+                                <td class="p-5">Elongation at break</td>
+                                <td class="p-5 text-center border-l border-slate-100">ASTM D638</td>
+                                <td class="p-5 text-center border-l border-slate-100">%</td>
+                                <td class="p-5 text-center border-l border-slate-100">>500</td>
+                            </tr>
+                            <tr class="bg-[#F7F8FC] border-b border-slate-100">
+                                <td class="p-5">Flexural Modulus</td>
+                                <td class="p-5 text-center border-l border-slate-100">ASTM D790</td>
+                                <td class="p-5 text-center border-l border-slate-100">MPa</td>
+                                <td class="p-5 text-center border-l border-slate-100">850</td>
+                            </tr>
+                            <tr class="border-b border-slate-100">
+                                <td class="p-5">Hardness (Shore D)</td>
+                                <td class="p-5 text-center border-l border-slate-100">ASTM D2240</td>
+                                <td class="p-5 text-center border-l border-slate-100">D</td>
+                                <td class="p-5 text-center border-l border-slate-100">63</td>
+                            </tr>
+                            <tr class="bg-[#F7F8FC] border-b border-slate-100">
+                                <td class="p-5">Tensile Modulus</td>
+                                <td class="p-5 text-center border-l border-slate-100">ASTM D638</td>
+                                <td class="p-5 text-center border-l border-slate-100">MPa</td>
+                                <td class="p-5 text-center border-l border-slate-100">1000</td>
+                            </tr>
+                            <tr class="border-b border-slate-100">
+                                <td class="p-5">Ball Indentation Hardness</td>
+                                <td class="p-5 text-center border-l border-slate-100">ISO 2039-1</td>
+                                <td class="p-5 text-center border-l border-slate-100">N/mm²</td>
+                                <td class="p-5 text-center border-l border-slate-100">45</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Related Products -->
+    <section class="py-24 bg-[#F8F9FB]/50">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <h2 class="text-[36px] font-bold text-[#1a1a1a] text-center mb-16">Related Products</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                <!-- Related Card 1 -->
+                <a href="product-details.html"
+                    class="bg-white group overflow-hidden border border-slate-100 shadow-sm transition-all hover:shadow-lg">
+                    <img src="assets/image 1 (9).png" alt="Related Product" class="w-full h-64 object-cover">
+                    <div class="p-6 space-y-3">
+                        <h4
+                            class="text-[18px] font-bold text-[#1a1a1a] uppercase group-hover:text-primary transition-colors">
+                            Product Name</h4>
+                        <p class="text-slate-500 font-bold text-[13px] leading-snug">Used in electrical panels,
+                            fabrication & insulation</p>
+                        <p class="text-slate-400 text-[11px] leading-relaxed">Polyplast offers a wide range of premium
+                            plastic products made with high-grade materials.</p>
+                    </div>
+                </a>
+                <!-- Related Card 2 -->
+                <a href="product-details.html"
+                    class="bg-white group overflow-hidden border border-slate-100 shadow-sm transition-all hover:shadow-lg">
+                    <img src="assets/image 1 (10).png" alt="Related Product" class="w-full h-64 object-cover">
+                    <div class="p-6 space-y-3">
+                        <h4
+                            class="text-[18px] font-bold text-[#1a1a1a] uppercase group-hover:text-primary transition-colors">
+                            Product Name</h4>
+                        <p class="text-slate-500 font-bold text-[13px] leading-snug">Used in electrical panels,
+                            fabrication & insulation</p>
+                        <p class="text-slate-400 text-[11px] leading-relaxed">Polyplast offers a wide range of premium
+                            plastic products made with high-grade materials.</p>
+                    </div>
+                </a>
+                <!-- Related Card 3 -->
+                <a href="product-details.html"
+                    class="bg-white group overflow-hidden border border-slate-100 shadow-sm transition-all hover:shadow-lg">
+                    <img src="assets/image 1 (11).png" alt="Related Product" class="w-full h-64 object-cover">
+                    <div class="p-6 space-y-3">
+                        <h4
+                            class="text-[18px] font-bold text-[#1a1a1a] uppercase group-hover:text-primary transition-colors">
+                            Product Name</h4>
+                        <p class="text-slate-500 font-bold text-[13px] leading-snug">Used in electrical panels,
+                            fabrication & insulation</p>
+                        <p class="text-slate-400 text-[11px] leading-relaxed">Polyplast offers a wide range of premium
+                            plastic products made with high-grade materials.</p>
+                    </div>
+                </a>
+                <!-- Related Card 4 -->
+                <a href="product-details.html"
+                    class="bg-white group overflow-hidden border border-slate-100 shadow-sm transition-all hover:shadow-lg">
+                    <img src="assets/image 1 (12).png" alt="Related Product" class="w-full h-64 object-cover">
+                    <div class="p-6 space-y-3">
+                        <h4
+                            class="text-[18px] font-bold text-[#1a1a1a] uppercase group-hover:text-primary transition-colors">
+                            Product Name</h4>
+                        <p class="text-slate-500 font-bold text-[13px] leading-snug">Used in electrical panels,
+                            fabrication & insulation</p>
+                        <p class="text-slate-400 text-[11px] leading-relaxed">Polyplast offers a wide range of premium
+                            plastic products made with high-grade materials.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="flex justify-center">
+                <a href="products.html"
+                    class="bg-primary text-white font-bold text-[13px] uppercase px-12 py-4 rounded-[6px] hover:bg-primary-dark transition-all transform hover:scale-105">
+                    VIEW ALL PRODUCTS
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section class="py-24 bg-white font-poppins">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <!-- Section Header -->
+            <div class="text-center max-w-4xl mx-auto mb-16 space-y-4">
+                <h2 class="text-[36px] font-semibold text-[#1a1a1a] leading-tight">“Industries We Serve”</h2>
+                <p class="text-[#4A5568] text-[15px] md:text-[16px] leading-relaxed">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book.
+                </p>
+            </div>
+
+            <!-- Industries Grid -->
+            <div class="flex flex-wrap justify-center gap-6">
+                <!-- Card 1 -->
+                <div
+                    class="w-full md:w-[calc(33.33%-1rem)] bg-[#F1F3F7] p-8 rounded-2xl space-y-4 shadow-sm border border-slate-50 transition-all hover:shadow-md">
+                    <img src="assets/building-construction-icon 1.png" alt="Construction"
+                        class="w-12 h-12 object-contain">
+                    <h4 class="text-[20px] font-medium text-[#1a1a1a]">Construction & Infrastructure</h4>
+                    <p class="text-[#4A5568] text-[14px] leading-relaxed">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="w-full md:w-[calc(33.33%-1rem)] bg-[#F1F3F7] p-8 rounded-2xl space-y-4 shadow-sm border border-slate-50 transition-all hover:shadow-md">
+                    <img src="assets/electric-icon 1.png" alt="Electrical" class="w-12 h-12 object-contain">
+                    <h4 class="text-[20px] font-medium text-[#1a1a1a]">Electrical & Electronics</h4>
+                    <p class="text-[#4A5568] text-[14px] leading-relaxed">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="w-full md:w-[calc(33.33%-1rem)] bg-[#F1F3F7] p-8 rounded-2xl space-y-4 shadow-sm border border-slate-50 transition-all hover:shadow-md">
+                    <img src="assets/factory-industry-manufacturing-production-svgrepo-com 1.png" alt="Manufacturing"
+                        class="w-12 h-12 object-contain">
+                    <h4 class="text-[20px] font-medium text-[#1a1a1a]">Manufacturing Units</h4>
+                    <p class="text-[#4A5568] text-[14px] leading-relaxed">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                </div>
+
+                <!-- Card 4 (Bottom Row) -->
+                <div
+                    class="w-full md:w-[calc(40%-1rem)] bg-[#F1F3F7] p-8 rounded-2xl space-y-4 shadow-sm border border-slate-50 transition-all hover:shadow-md mx-auto md:mx-0">
+                    <img src="assets/delivery-packaging-box-svgrepo-com 1.png" alt="Packaging"
+                        class="w-12 h-12 object-contain">
+                    <h4 class="text-[20px] font-medium text-[#1a1a1a]">Packaging & Fabrication</h4>
+                    <p class="text-[#4A5568] text-[14px] leading-relaxed">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                </div>
+
+                <!-- Card 5 (Bottom Row) -->
+                <div
+                    class="w-full md:w-[calc(40%-1rem)] bg-[#F1F3F7] p-8 rounded-2xl space-y-4 shadow-sm border border-slate-50 transition-all hover:shadow-md mx-auto md:mx-0">
+                    <img src="assets/distributor-icon 1.png" alt="Retailers" class="w-12 h-12 object-contain">
+                    <h4 class="text-[20px] font-medium text-[#1a1a1a]">Retailers & Distributors</h4>
+                    <p class="text-[#4A5568] text-[14px] leading-relaxed">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#F8F9FB] pt-20 pb-10 border-t border-slate-100 font-poppins">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 mb-20">
+                <!-- Branding -->
+                <div class="lg:col-span-3 space-y-6">
+                    <div class="flex flex-col items-start gap-2">
+                        <img src="assets/image 2 (1).png" alt="Chennai PolyPlast" class="h-12">
+                        <span class="text-[#248fce] font-bold text-[14px] uppercase tracking-wider">Chennai
+                            PolyPlast</span>
+                    </div>
+                    <p class="text-[#4A5568] text-[14px] leading-relaxed max-w-xs">
+                        Reliable stockists & suppliers of industrial plastic products for retailers, manufacturers, and
+                        industries.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="lg:col-span-2">
+                    <h4 class="font-medium text-[#1a1a1a] text-[16px] mb-6">Quick Links</h4>
+                    <ul class="space-y-4 text-[#4A5568] text-[16px]">
+                        <li><a href="index.html" class="hover:text-[#248fce] transition-colors">Home</a></li>
+                        <li><a href="products.html" class="hover:text-[#248fce] transition-colors">Products</a></li>
+                        <li><a href="industry.html" class="hover:text-[#248fce] transition-colors">Industry</a></li>
+                        <li><a href="download.html" class="hover:text-[#248fce] transition-colors">Download</a></li>
+                        <li><a href="contact.html" class="hover:text-[#248fce] transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products -->
+                <div class="lg:col-span-2">
+                    <h4 class="font-medium text-[#1a1a1a] text-[16px] mb-6">Products</h4>
+                    <ul class="space-y-4 text-[#4A5568] text-[16px]">
+                        <li><a href="#" class="hover:text-[#248fce] transition-colors">Lorem Ipsum</a></li>
+                        <li><a href="#" class="hover:text-[#248fce] transition-colors">Lorem Ipsum Ipsum</a></li>
+                        <li><a href="#" class="hover:text-[#248fce] transition-colors">Lorem</a></li>
+                        <li><a href="#" class="hover:text-[#248fce] transition-colors">Lorem Ipsum</a></li>
+                    </ul>
+                </div>
+
+                <!-- Industry -->
+                <div class="lg:col-span-2">
+                    <h4 class="font-medium text-[#1a1a1a] text-[16px] mb-6">Industry</h4>
+                    <ul class="space-y-4 text-[#4A5568] text-[16px]">
+                        <li><a href="#" class="hover:text-[#248fce] transition-colors">Lorem</a></li>
+                        <li><a href="#" class="hover:text-[#248fce] transition-colors">Lorem Ipsum</a></li>
+                        <li><a href="#" class="hover:text-[#248fce] transition-colors">Lorem Ipsum</a></li>
+                        <li><a href="#" class="hover:text-[#248fce] transition-colors">Lorem Ipsum Ipsum</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Details -->
+                <div class="lg:col-span-3">
+                    <h4 class="font-medium text-[#1a1a1a] text-[16px] mb-6">Contact Details</h4>
+                    <ul class="space-y-5 text-[#4A5568] text-[16px]">
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="phone" class="w-5 h-5 text-[#1a1a1a]"></i>
+                            <a href="tel:+91654328903" class="text-[#248fce] hover:underline">+91 654328903</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="mail" class="w-5 h-5 text-[#1a1a1a]"></i>
+                            <a href="mailto:cppolyplast@gmail.com"
+                                class="text-[#248fce] hover:underline">cppolyplast@gmail.com</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="clock" class="w-5 h-5 text-[#1a1a1a]"></i>
+                            <span class="text-[#248fce]">Week days 9am to 10pm</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-[#1a1a1a] mt-1"></i>
+                            <span class="text-[#248fce]">73, Anna Nagar, Chennai, India.</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6 flex items-center gap-2 text-[#4A5568] text-[16px]">
+                        <span>GST No. :</span>
+                        <span class="text-[#248fce]">27ABCDE1234F1Z5</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom Bar -->
+            <div
+                class="flex flex-col md:flex-row justify-between items-center border-t border-slate-200 pt-8 gap-4 text-[#718096] text-[12px]">
+                <p>2025 @ All rights reversed</p>
+                <p class="cursor-pointer hover:text-primary transition-colors">Privacy policy & terms and conditions</p>
+                <p>Developed by</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile Menu Functionality
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileMenuClose = document.getElementById('mobile-menu-close');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuToggle && mobileMenu) {
+            mobileMenuToggle.addEventListener('click', () => {
+                mobileMenu.classList.remove('translate-x-full');
+                document.body.style.overflow = 'hidden';
+            });
+        }
+
+        if (mobileMenuClose && mobileMenu) {
+            mobileMenuClose.addEventListener('click', () => {
+                mobileMenu.classList.add('translate-x-full');
+                document.body.style.overflow = '';
+            });
+        }
+    </script>
+</body>
+
+</html>
