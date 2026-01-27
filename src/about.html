@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Industries | CP Polyplast</title>
+    <title>About Us | CP Polyplast</title>
 
     <link rel="icon" type="image/png" href="assets/polyplast_logo_1768477028508.png">
 
@@ -14,7 +14,6 @@
         rel="stylesheet">
 
     <script src="https://unpkg.com/lucide@latest"></script>
-
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -54,9 +53,9 @@
             <!-- Navigation -->
             <nav class="hidden lg:flex flex-1 items-center justify-center space-x-10 px-8">
                 <a href="index.html" class="nav-link text-slate-900">Home</a>
-                <a href="about.html" class="nav-link text-slate-900">About</a>
+                <a href="about.html" class="nav-link !text-primary active">About</a>
                 <a href="products.html" class="nav-link text-slate-900">Products</a>
-                <a href="industry.html" class="nav-link !text-primary active">Industry</a>
+                <a href="industry.html" class="nav-link text-slate-900">Industry</a>
                 <a href="download.html" class="nav-link text-slate-900">Download</a>
                 <a href="contact.html" class="nav-link text-slate-900">Contact</a>
             </nav>
@@ -72,10 +71,10 @@
                         class="text-primary font-medium border-b border-primary/30 hover:border-primary transition-all">+91
                         654328903</a>
                 </div>
-                <button
-                    class="hidden sm:block bg-primary text-white font-bold text-xs tracking-wider px-6 py-4 rounded-md uppercase hover:bg-primary-dark transition-colors shadow-sm">
+                <a href="download.html"
+                    class="hidden sm:block bg-primary text-white font-bold text-xs tracking-wider px-6 py-4 rounded-md uppercase hover:bg-primary-dark transition-colors shadow-sm text-center">
                     DOWNLOAD BROCHURE
-                </button>
+                </a>
 
                 <!-- Mobile Menu Toggle -->
                 <button id="mobile-menu-toggle" class="lg:hidden p-2 hover:bg-slate-50 rounded-full group">
@@ -109,10 +108,9 @@
                         class="w-6 h-6 opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all"></i>
                 </a>
                 <a href="about.html"
-                    class="text-3xl font-bold text-slate-900 hover:text-primary transition-colors flex items-center justify-between group">
+                    class="text-3xl font-bold text-primary transition-colors flex items-center justify-between group">
                     <span>About</span>
-                    <i data-lucide="arrow-right"
-                        class="w-6 h-6 opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all"></i>
+                    <i data-lucide="arrow-right" class="w-6 h-6 opacity-100 transition-all"></i>
                 </a>
                 <a href="products.html"
                     class="text-3xl font-bold text-slate-900 hover:text-primary transition-colors flex items-center justify-between group">
@@ -121,9 +119,10 @@
                         class="w-6 h-6 opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all"></i>
                 </a>
                 <a href="industry.html"
-                    class="text-3xl font-bold text-primary transition-colors flex items-center justify-between group">
+                    class="text-3xl font-bold text-slate-900 hover:text-primary transition-colors flex items-center justify-between group">
                     <span>Industry</span>
-                    <i data-lucide="arrow-right" class="w-6 h-6 opacity-100 transition-all"></i>
+                    <i data-lucide="arrow-right"
+                        class="w-6 h-6 opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all"></i>
                 </a>
                 <a href="download.html"
                     class="text-3xl font-bold text-slate-900 hover:text-primary transition-colors flex items-center justify-between group">
@@ -150,10 +149,10 @@
                         <a href="tel:+91654328903" class="text-2xl font-bold text-slate-900">+91 654328903</a>
                     </div>
                 </div>
-                <button
-                    class="w-full bg-primary text-white font-bold py-6 rounded-2xl uppercase tracking-widest shadow-xl shadow-primary/20 hover:bg-primary-dark transition-all transform active:scale-[0.98]">
+                <a href="download.html"
+                    class="w-full bg-primary text-white font-bold py-6 rounded-2xl uppercase tracking-widest shadow-xl shadow-primary/20 hover:bg-primary-dark transition-all transform active:scale-[0.98] text-center">
                     DOWNLOAD BROCHURE
-                </button>
+                </a>
             </div>
         </div>
     </div>
@@ -188,125 +187,259 @@
         </div>
     </section>
 
-    <!-- Industry Sections Content -->
-    <main class="py-24">
+    <!-- Quality Content Section -->
+    <section class="py-24 bg-white">
         <div class="container mx-auto px-4 max-w-7xl">
-            <!-- Section 1: Construction -->
-            <div class="flex flex-col lg:flex-row items-center gap-12 mb-32">
-                <div class="lg:w-1/2">
-                    <img src="assets/Rectangle 82.png" alt="Construction & Infrastructure"
-                        class="w-full h-auto rounded-none shadow-sm">
-                </div>
-                <div class="lg:w-1/2 space-y-6">
-                    <img src="assets/Group (1).png" alt="Icon" class="w-12 h-12">
-                    <h2 class="text-[28px] md:text-[34px] font-bold text-[#1a1a1a] leading-tight">Construction &
-                        Infrastructure</h2>
-                    <p class="text-[#4A5568] text-[15px] md:text-[16px] leading-[1.7]">
-                        Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book. It has survived not only five centuries.
-                    </p>
-                    <a href="products.html"
-                        class="inline-flex items-center text-primary font-bold text-sm group uppercase tracking-tight">
-                        View Products <i data-lucide="move-right"
-                            class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1"></i>
-                    </a>
-                </div>
-            </div>
+            <div class="lg:w-full space-y-6">
+                <!-- Heading -->
+                <h2 class="text-primary quality-products-title">
+                    Quality Plastic Products You Can Rely On
+                </h2>
 
-            <!-- Section 2: Electrical -->
-            <div class="flex flex-col lg:flex-row-reverse items-center gap-12 mb-32">
-                <div class="lg:w-1/2">
-                    <img src="assets/Rectangle 82 (1).png" alt="Electrical & Electronics"
-                        class="w-full h-auto rounded-none shadow-sm">
-                </div>
-                <div class="lg:w-1/2 space-y-6">
-                    <img src="assets/electric-icon 1 (1).png" alt="Icon" class="w-12 h-12">
-                    <h2 class="text-[28px] md:text-[34px] font-bold text-[#1a1a1a] leading-tight">Electrical &
-                        Electronics</h2>
-                    <p class="text-[#4A5568] text-[15px] md:text-[16px] leading-[1.7]">
-                        Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+                <!-- Description -->
+                <div class="quality-text-regular space-y-8 max-w-6xl">
+                    <p>
+                        Polyplast offers a wide range of premium plastic products made with high-grade materials and
+                        advanced manufacturing standards. Our products are designed for strength, durability, and
+                        long-term performance across residential, commercial, and industrial use.
                     </p>
-                    <a href="products.html"
-                        class="inline-flex items-center text-primary font-bold text-sm group uppercase tracking-tight">
-                        View Products <i data-lucide="move-right"
-                            class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1"></i>
-                    </a>
+                    <p>
+                        With a strong focus on quality and customer satisfaction, Polyplast delivers reliable solutions
+                        that meet everyday and large-scale requirements.
+                    </p>
                 </div>
-            </div>
 
-            <!-- Section 3: Manufacturing -->
-            <div class="flex flex-col lg:flex-row items-center gap-12 mb-32">
-                <div class="lg:w-1/2">
-                    <img src="assets/Rectangle 82 (2).png" alt="Manufacturing Units"
-                        class="w-full h-auto rounded-none shadow-sm">
-                </div>
-                <div class="lg:w-1/2 space-y-6">
-                    <img src="assets/Group (2).png" alt="Icon" class="w-12 h-12">
-                    <h2 class="text-[28px] md:text-[34px] font-bold text-[#1a1a1a] leading-tight">Manufacturing Units
-                    </h2>
-                    <p class="text-[#4A5568] text-[15px] md:text-[16px] leading-[1.7]">
-                        Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book. It has survived not only five centuries.
-                    </p>
-                    <a href="products.html"
-                        class="inline-flex items-center text-primary font-bold text-sm group uppercase tracking-tight">
-                        View Products <i data-lucide="move-right"
-                            class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1"></i>
-                    </a>
-                </div>
-            </div>
+                <!-- Bullets -->
+                <ul class="pt-4 space-y-3">
+                    <li class="flex items-center space-x-3 quality-text-regular">
+                        <div class="w-1 h-1 bg-slate-800 rounded-full shrink-0"></div>
+                        <span>Ready stock available</span>
+                    </li>
+                    <li class="flex items-center space-x-3 quality-text-regular">
+                        <div class="w-1 h-1 bg-slate-800 rounded-full shrink-0"></div>
+                        <span>Industrial-grade materials</span>
+                    </li>
+                    <li class="flex items-center space-x-3 quality-text-regular">
+                        <div class="w-1 h-1 bg-slate-800 rounded-full shrink-0"></div>
+                        <span>Multiple sizes & thicknesses</span>
+                    </li>
+                    <li class="flex items-center space-x-3 quality-text-regular">
+                        <div class="w-1 h-1 bg-slate-800 rounded-full shrink-0"></div>
+                        <span>Bulk & wholesale supply</span>
+                    </li>
+                </ul>
 
-            <!-- Section 4: Packaging -->
-            <div class="flex flex-col lg:flex-row-reverse items-center gap-12 mb-32">
-                <div class="lg:w-1/2">
-                    <img src="assets/Rectangle 82 (3).png" alt="Packaging & Fabrication"
-                        class="w-full h-auto rounded-none shadow-sm">
-                </div>
-                <div class="lg:w-1/2 space-y-6">
-                    <img src="assets/Group (3).png" alt="Icon" class="w-12 h-12">
-                    <h2 class="text-[28px] md:text-[34px] font-bold text-[#1a1a1a] leading-tight">Packaging &
-                        Fabrication</h2>
-                    <p class="text-[#4A5568] text-[15px] md:text-[16px] leading-[1.7]">
-                        Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book. It has survived not only five centuries.
-                    </p>
-                    <a href="products.html"
-                        class="inline-flex items-center text-primary font-bold text-sm group uppercase tracking-tight">
-                        View Products <i data-lucide="move-right"
-                            class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1"></i>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Section 5: Retailers -->
-            <div class="flex flex-col lg:flex-row items-center gap-12">
-                <div class="lg:w-1/2">
-                    <img src="assets/Rectangle 82 (4).png" alt="Retailers & Distributors"
-                        class="w-full h-auto rounded-none shadow-sm">
-                </div>
-                <div class="lg:w-1/2 space-y-6">
-                    <img src="assets/distributor-icon 1 (1).png" alt="Icon" class="w-12 h-12">
-                    <h2 class="text-[28px] md:text-[34px] font-bold text-[#1a1a1a] leading-tight">Retailers &
-                        Distributors</h2>
-                    <p class="text-[#4A5568] text-[15px] md:text-[16px] leading-[1.7]">
-                        Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book. It has survived not only five centuries.
-                    </p>
-                    <a href="products.html"
-                        class="inline-flex items-center text-primary font-bold text-sm group uppercase tracking-tight">
-                        View Products <i data-lucide="move-right"
-                            class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1"></i>
+                <!-- CTA -->
+                <div class="pt-8">
+                    <a href="contact.html"
+                        class="text-[11px] font-bold text-primary uppercase underline underline-offset-4 tracking-widest hover:text-primary-dark transition-colors">
+                        KNOW MORE ABOUT US
                     </a>
                 </div>
             </div>
         </div>
-    </main>
+    </section>
+
+    <!-- Features Section -->
+    <section class="pb-24 bg-white">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Feature 1 -->
+                <div class="flex items-start space-x-6">
+                    <img src="assets/icon (1).png" alt="Bulk Stock" class="w-12 h-12 object-contain shrink-0 mt-1">
+                    <div class="space-y-2">
+                        <h4 class="feature-title text-[#2D3748]">Bulk Stock Availability</h4>
+                        <p class="text-[#718096] text-[15px] leading-relaxed">
+                            Large inventory maintained for quick dispatch.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="flex items-start space-x-6">
+                    <img src="assets/icon (2).png" alt="Retailer Supply" class="w-12 h-12 object-contain shrink-0 mt-1">
+                    <div class="space-y-2">
+                        <h4 class="feature-title text-[#2D3748]">Retailer & Dealer Supply</h4>
+                        <p class="text-[#718096] text-[15px] leading-relaxed">
+                            Trusted supplier to retailers and distributors.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="flex items-start space-x-6">
+                    <img src="assets/icon (3).png" alt="Industry Solutions"
+                        class="w-12 h-12 object-contain shrink-0 mt-1">
+                    <div class="space-y-2">
+                        <h4 class="feature-title text-[#2D3748]">Industry-Specific Solutions</h4>
+                        <p class="text-[#718096] text-[15px] leading-relaxed">
+                            Electrical, fabrication, packaging, construction, signage, etc.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <!-- Section Header -->
+            <div class="text-center max-w-4xl mx-auto mb-16 space-y-4">
+                <h2 class="industries-serve-title">“Industries We Serve”</h2>
+                <p class="text-[#4A5568] text-[15px] md:text-[16px] leading-relaxed">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book.
+                </p>
+            </div>
+
+            <!-- Industries Grid -->
+            <div class="flex flex-wrap justify-center gap-6">
+                <!-- Card 1 -->
+                <div
+                    class="w-full md:w-[calc(33.33%-1rem)] bg-[#F1F3F7] p-8 rounded-2xl space-y-4 shadow-sm border border-slate-50 transition-all hover:shadow-md">
+                    <img src="assets/building-construction-icon 1.png" alt="Construction"
+                        class="w-12 h-12 object-contain">
+                    <h4 class="industry-title">Construction & Infrastructure</h4>
+                    <p class="text-[#4A5568] text-[14px] leading-relaxed">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="w-full md:w-[calc(33.33%-1rem)] bg-[#F1F3F7] p-8 rounded-2xl space-y-4 shadow-sm border border-slate-50 transition-all hover:shadow-md">
+                    <img src="assets/electric-icon 1.png" alt="Electrical" class="w-12 h-12 object-contain">
+                    <h4 class="industry-title">Electrical & Electronics</h4>
+                    <p class="text-[#4A5568] text-[14px] leading-relaxed">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="w-full md:w-[calc(33.33%-1rem)] bg-[#F1F3F7] p-8 rounded-2xl space-y-4 shadow-sm border border-slate-50 transition-all hover:shadow-md">
+                    <img src="assets/factory-industry-manufacturing-production-svgrepo-com 1.png" alt="Manufacturing"
+                        class="w-12 h-12 object-contain">
+                    <h4 class="industry-title">Manufacturing Units</h4>
+                    <p class="text-[#4A5568] text-[14px] leading-relaxed">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                </div>
+
+                <!-- Card 4 (Bottom Row) -->
+                <div
+                    class="w-full md:w-[calc(40%-1rem)] bg-[#F1F3F7] p-8 rounded-2xl space-y-4 shadow-sm border border-slate-50 transition-all hover:shadow-md mx-auto md:mx-0">
+                    <img src="assets/delivery-packaging-box-svgrepo-com 1.png" alt="Packaging"
+                        class="w-12 h-12 object-contain">
+                    <h4 class="industry-title">Packaging & Fabrication</h4>
+                    <p class="text-[#4A5568] text-[14px] leading-relaxed">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                </div>
+
+                <!-- Card 5 (Bottom Row) -->
+                <div
+                    class="w-full md:w-[calc(40%-1rem)] bg-[#F1F3F7] p-8 rounded-2xl space-y-4 shadow-sm border border-slate-50 transition-all hover:shadow-md mx-auto md:mx-0">
+                    <img src="assets/distributor-icon 1.png" alt="Retailers" class="w-12 h-12 object-contain">
+                    <h4 class="industry-title">Retailers & Distributors</h4>
+                    <p class="text-[#4A5568] text-[14px] leading-relaxed">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stock & Supply Capability Section -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+                <!-- Left Content -->
+                <div class="lg:w-[50%] space-y-8">
+                    <h2 class="text-[32px] md:text-[42px] font-bold text-[#248fce] leading-tight">
+                        Stock & Supply Capability
+                    </h2>
+                    <p class="text-[#4A5568] text-[16px] md:text-[18px] leading-relaxed max-w-xl font-medium">
+                        We maintain a ready inventory of industrial plastic materials to support urgent and bulk
+                        requirements for retailers and manufacturers.
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="products.html"
+                            class="px-8 py-4 bg-[#248fce] text-white font-bold text-[13px] uppercase rounded-[6px] shadow-sm hover:bg-[#1a7a9c] transition-all">
+                            VIEW PRODUCTS
+                        </a>
+                        <a href="contact.html"
+                            class="px-8 py-4 bg-[#A0AEC0] text-white font-bold text-[13px] uppercase rounded-[6px] shadow-sm hover:bg-[#718096] transition-all">
+                            CONTACT US
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Image -->
+                <div class="lg:w-[45%]">
+                    <img src="assets/Rectangle 77 (1).png" alt="Stock & Supply"
+                        class="w-full h-auto rounded-[12px] shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nationwide Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="mb-16 text-center text-[#248fce]">
+                <h3 class="nationwide-supply-title mb-10">Supplying to Retailers & Manufacturers Nationwide</h3>
+
+                <div class="space-y-6">
+                    <!-- Row 1: 5 Logos -->
+                    <div class="flex flex-wrap justify-center gap-4 md:gap-5">
+                        <div
+                            class="bg-white px-6 py-3 rounded-lg shadow-[0_2px_15px_rgba(0,0,0,0.06)] border border-slate-50 flex items-center justify-center min-w-[140px] md:min-w-[160px]">
+                            <img src="assets/Logo (1).png" alt="Partner Logo" class="h-7 md:h-8 object-contain">
+                        </div>
+                        <div
+                            class="bg-white px-6 py-3 rounded-lg shadow-[0_2px_15px_rgba(0,0,0,0.06)] border border-slate-50 flex items-center justify-center min-w-[140px] md:min-w-[160px]">
+                            <img src="assets/Logo (2).png" alt="Partner Logo" class="h-7 md:h-8 object-contain">
+                        </div>
+                        <div
+                            class="bg-white px-6 py-3 rounded-lg shadow-[0_2px_15px_rgba(0,0,0,0.06)] border border-slate-50 flex items-center justify-center min-w-[140px] md:min-w-[160px]">
+                            <img src="assets/Logo (3).png" alt="Partner Logo" class="h-7 md:h-8 object-contain">
+                        </div>
+                        <div
+                            class="bg-white px-6 py-3 rounded-lg shadow-[0_2px_15px_rgba(0,0,0,0.06)] border border-slate-50 flex items-center justify-center min-w-[140px] md:min-w-[160px]">
+                            <img src="assets/Logo (4).png" alt="Partner Logo" class="h-7 md:h-8 object-contain">
+                        </div>
+                        <div
+                            class="bg-white px-6 py-3 rounded-lg shadow-[0_2px_15px_rgba(0,0,0,0.06)] border border-slate-50 flex items-center justify-center min-w-[140px] md:min-w-[160px]">
+                            <img src="assets/Logo (5).png" alt="Partner Logo" class="h-7 md:h-8 object-contain">
+                        </div>
+                    </div>
+
+                    <!-- Row 2: 4 Logos centered -->
+                    <div class="flex flex-wrap justify-center gap-4 md:gap-5">
+                        <div
+                            class="bg-white px-6 py-3 rounded-lg shadow-[0_2px_15px_rgba(0,0,0,0.06)] border border-slate-50 flex items-center justify-center min-w-[140px] md:min-w-[160px]">
+                            <img src="assets/Logo (6).png" alt="Partner Logo" class="h-7 md:h-8 object-contain">
+                        </div>
+                        <div
+                            class="bg-white px-6 py-3 rounded-lg shadow-[0_2px_15px_rgba(0,0,0,0.06)] border border-slate-50 flex items-center justify-center min-w-[140px] md:min-w-[160px]">
+                            <img src="assets/Logo (7).png" alt="Partner Logo" class="h-7 md:h-8 object-contain">
+                        </div>
+                        <div
+                            class="bg-white px-6 py-3 rounded-lg shadow-[0_2px_15px_rgba(0,0,0,0.06)] border border-slate-50 flex items-center justify-center min-w-[140px] md:min-w-[160px]">
+                            <img src="assets/Logo (8).png" alt="Partner Logo" class="h-7 md:h-8 object-contain">
+                        </div>
+                        <div
+                            class="bg-white px-6 py-3 rounded-lg shadow-[0_2px_15px_rgba(0,0,0,0.06)] border border-slate-50 flex items-center justify-center min-w-[140px] md:min-w-[160px]">
+                            <img src="assets/Logo (9).png" alt="Partner Logo" class="h-7 md:h-8 object-contain">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Brochure CTA Bar -->
     <section class="py-12 bg-white">
@@ -316,10 +449,10 @@
                 <h2 class="text-[32px] md:text-[38px] font-bold text-white leading-[1.2] max-w-2xl">
                     Download your Broucher for <br class="hidden md:block">more information
                 </h2>
-                <button
-                    class="bg-white text-[#333] font-bold text-[12px] tracking-tight uppercase px-10 py-4 rounded-[10px] shadow-md hover:bg-slate-50 transition-all shrink-0">
+                <a href="download.html"
+                    class="bg-white text-[#333] font-bold text-[12px] tracking-tight uppercase px-10 py-4 rounded-[10px] shadow-md hover:bg-slate-50 transition-all shrink-0 text-center">
                     DOWNLOAD BROCHURE
-                </button>
+                </a>
             </div>
         </div>
     </section>
@@ -369,7 +502,6 @@
                     </ul>
                 </div>
 
-                <!-- Industry -->
                 <div class="lg:col-span-2">
                     <h4 class="font-medium text-[#1a1a1a] text-[16px] mb-6">Industry</h4>
                     <ul class="space-y-4 text-[#4A5568] text-[16px]">
