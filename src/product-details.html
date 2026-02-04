@@ -42,7 +42,7 @@
 <body class="font-sans antialiased text-slate-800 bg-white selection:bg-primary selection:text-white">
     <!-- Header -->
     <header class="sticky top-0 z-50 bg-white border-b border-slate-100">
-        <div class="container mx-auto px-4 py-4 flex items-center justify-between gap-4">
+        <div class="container mx-auto px-4 max-w-7xl py-4 flex items-center justify-between gap-4">
             <!-- Logo -->
             <div class="flex items-center shrink-0">
                 <a href="index.html" class="block">
@@ -52,12 +52,18 @@
 
             <!-- Navigation -->
             <nav class="hidden lg:flex flex-1 items-center justify-center space-x-10 px-8">
-                <a href="index.html" class="nav-link text-slate-900">Home</a>
-                <a href="about.html" class="nav-link text-slate-900">About</a>
-                <a href="products.html" class="nav-link text-slate-900 active !text-primary">Products</a>
-                <a href="industry.html" class="nav-link text-slate-900">Industry</a>
-                <a href="download.html" class="nav-link text-slate-900">Download</a>
-                <a href="contact.html" class="nav-link text-slate-900">Contact</a>
+                <a href="index.html"
+                    class="text-slate-900 font-medium hover:text-primary transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 after:w-0 hover:after:w-full">Home</a>
+                <a href="about.html"
+                    class="text-slate-900 font-medium hover:text-primary transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 after:w-0 hover:after:w-full">About</a>
+                <a href="products.html"
+                    class="text-primary font-medium hover:text-primary transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 after:w-full">Products</a>
+                <a href="industry.html"
+                    class="text-slate-900 font-medium hover:text-primary transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 after:w-0 hover:after:w-full">Industry</a>
+                <a href="download.html"
+                    class="text-slate-900 font-medium hover:text-primary transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 after:w-0 hover:after:w-full">Download</a>
+                <a href="contact.html"
+                    class="text-slate-900 font-medium hover:text-primary transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 after:w-0 hover:after:w-full">Contact</a>
             </nav>
 
             <!-- Action Area -->
@@ -71,10 +77,10 @@
                         class="text-primary font-medium border-b border-primary/30 hover:border-primary transition-all">+91
                         654328903</a>
                 </div>
-                <button
-                    class="hidden sm:block bg-primary text-white font-bold text-xs tracking-wider px-6 py-4 rounded-md uppercase hover:bg-primary-dark transition-colors shadow-sm">
+                <a href="download.html"
+                    class="hidden sm:block bg-primary text-white font-bold text-xs tracking-wider px-6 py-4 rounded-md uppercase hover:bg-primary-dark transition-colors shadow-sm text-center">
                     DOWNLOAD BROCHURE
-                </button>
+                </a>
 
                 <!-- Mobile Menu Toggle -->
                 <button id="mobile-menu-toggle" class="lg:hidden p-2 hover:bg-slate-50 rounded-full group">
@@ -87,7 +93,7 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu"
         class="fixed inset-0 z-[100] bg-white translate-x-full transition-transform duration-500 lg:hidden overflow-y-auto">
-        <div class="container mx-auto px-4 py-8 flex flex-col h-full min-h-screen">
+        <div class="container mx-auto px-4 max-w-7xl py-8 flex flex-col h-full min-h-screen">
             <!-- Mobile Menu Header -->
             <div class="flex items-center justify-between mb-16">
                 <a href="index.html" class="block">
@@ -149,10 +155,10 @@
                         <a href="tel:+91654328903" class="text-2xl font-bold text-slate-900">+91 654328903</a>
                     </div>
                 </div>
-                <button
-                    class="w-full bg-primary text-white font-bold py-6 rounded-2xl uppercase tracking-widest shadow-xl shadow-primary/20 hover:bg-primary-dark transition-all transform active:scale-[0.98]">
+                <a href="download.html"
+                    class="w-full bg-primary text-white font-bold py-6 rounded-2xl uppercase tracking-widest shadow-xl shadow-primary/20 hover:bg-primary-dark transition-all transform active:scale-[0.98] text-center block">
                     DOWNLOAD BROCHURE
-                </button>
+                </a>
             </div>
         </div>
     </div>
@@ -273,15 +279,13 @@
             <div class="mt-20 font-poppins">
                 <div class="flex flex-wrap justify-center items-center gap-x-0 mb-10 max-w-6xl mx-auto">
                     <div
-                        class="property-tab px-10 py-4 font-medium cursor-pointer border-b-2 border-primary text-primary transition-all">
+                        class="px-10 py-4 font-medium cursor-pointer border-b-2 border-primary text-primary transition-all">
                         Mechanical Properties</div>
                     <div class="w-[1.5px] h-10 bg-slate-200 mx-10 hidden md:block"></div>
-                    <div
-                        class="property-tab px-10 py-4 font-medium cursor-pointer text-[#BCC1CF] hover:text-primary transition-all">
+                    <div class="px-10 py-4 font-medium cursor-pointer text-[#BCC1CF] hover:text-primary transition-all">
                         Thermal Performance</div>
                     <div class="w-[1.5px] h-10 bg-slate-200 mx-10 hidden md:block"></div>
-                    <div
-                        class="property-tab px-10 py-4 font-medium cursor-pointer text-[#BCC1CF] hover:text-primary transition-all">
+                    <div class="px-10 py-4 font-medium cursor-pointer text-[#BCC1CF] hover:text-primary transition-all">
                         Electrical Performance</div>
                 </div>
 

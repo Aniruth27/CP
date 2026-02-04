@@ -48,7 +48,7 @@
 <body class="font-sans antialiased text-slate-800 bg-white">
 
     <header class="sticky top-0 z-50 bg-white border-b border-slate-100">
-        <div class="container mx-auto px-4 py-4 flex items-center justify-between gap-4">
+        <div class="container mx-auto px-4 max-w-7xl py-4 flex items-center justify-between gap-4">
 
             <div class="flex items-center shrink-0">
                 <a href="index.html" class="block">
@@ -58,12 +58,18 @@
 
 
             <nav class="hidden lg:flex flex-1 items-center justify-center space-x-10 px-8">
-                <a href="index.html" class="nav-link text-slate-900">Home</a>
-                <a href="about.html" class="nav-link text-slate-900">About</a>
-                <a href="products.html" class="nav-link text-slate-900">Products</a>
-                <a href="industry.html" class="nav-link text-slate-900">Industry</a>
-                <a href="download.html" class="nav-link text-slate-900 active !text-primary">Download</a>
-                <a href="contact.html" class="nav-link text-slate-900">Contact</a>
+                <a href="index.html"
+                    class="text-slate-900 font-medium hover:text-primary transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 after:w-0 hover:after:w-full">Home</a>
+                <a href="about.html"
+                    class="text-slate-900 font-medium hover:text-primary transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 after:w-0 hover:after:w-full">About</a>
+                <a href="products.html"
+                    class="text-slate-900 font-medium hover:text-primary transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 after:w-0 hover:after:w-full">Products</a>
+                <a href="industry.html"
+                    class="text-slate-900 font-medium hover:text-primary transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 after:w-0 hover:after:w-full">Industry</a>
+                <a href="download.html"
+                    class="text-primary font-medium hover:text-primary transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 after:w-full">Download</a>
+                <a href="contact.html"
+                    class="text-slate-900 font-medium hover:text-primary transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 after:w-0 hover:after:w-full">Contact</a>
             </nav>
 
 
@@ -77,10 +83,10 @@
                         class="text-primary font-medium border-b border-primary/30 hover:border-primary transition-all">+91
                         654328903</a>
                 </div>
-                <button
-                    class="hidden sm:block bg-primary text-white font-bold text-xs tracking-wider px-6 py-4 rounded-md uppercase hover:bg-primary-dark transition-colors shadow-sm">
+                <a href="download.html"
+                    class="hidden sm:block bg-primary text-white font-bold text-xs tracking-wider px-6 py-4 rounded-md uppercase hover:bg-primary-dark transition-colors shadow-sm text-center">
                     DOWNLOAD BROCHURE
-                </button>
+                </a>
 
                 <button id="mobile-menu-toggle" class="lg:hidden p-2 hover:bg-slate-50 rounded-full group">
                     <i data-lucide="menu" class="w-7 h-7 text-slate-900"></i>
@@ -92,7 +98,7 @@
 
     <div id="mobile-menu"
         class="fixed inset-0 z-[100] bg-white translate-x-full transition-transform duration-500 lg:hidden overflow-y-auto">
-        <div class="container mx-auto px-4 py-8 flex flex-col h-full min-h-screen">
+        <div class="container mx-auto px-4 max-w-7xl py-8 flex flex-col h-full min-h-screen">
 
             <div class="flex items-center justify-between mb-16">
                 <a href="index.html" class="block">
@@ -155,10 +161,10 @@
                         <a href="tel:+91654328903" class="text-2xl font-bold text-slate-900">+91 654328903</a>
                     </div>
                 </div>
-                <button
-                    class="w-full bg-primary text-white font-bold py-6 rounded-2xl uppercase tracking-widest shadow-xl shadow-primary/20 hover:bg-primary-dark transition-all transform active:scale-[0.98]">
+                <a href="download.html"
+                    class="w-full bg-primary text-white font-bold py-6 rounded-2xl uppercase tracking-widest shadow-xl shadow-primary/20 hover:bg-primary-dark transition-all transform active:scale-[0.98] text-center block">
                     DOWNLOAD BROCHURE
-                </button>
+                </a>
             </div>
         </div>
     </div>
@@ -171,18 +177,29 @@
                 <h1 class="text-[36px] font-bold text-[#1a1a1a]">Downloads</h1>
 
                 <div class="flex flex-wrap gap-3 justify-center">
-                    <div class="filter-chip">Sheets</div>
-                    <div class="filter-chip">Rods</div>
-                    <div class="filter-chip">Tubes</div>
-                    <div class="filter-chip">Corrugated</div>
-                    <div class="filter-chip">Engineering Plastics</div>
+                    <div
+                        class="px-5 py-2 bg-[#F1F3F7] text-[#4A5568] rounded-md text-[13px] font-bold cursor-pointer transition-all duration-150 hover:bg-primary hover:text-white">
+                        Sheets</div>
+                    <div
+                        class="px-5 py-2 bg-[#F1F3F7] text-[#4A5568] rounded-md text-[13px] font-bold cursor-pointer transition-all duration-150 hover:bg-primary hover:text-white">
+                        Rods</div>
+                    <div
+                        class="px-5 py-2 bg-[#F1F3F7] text-[#4A5568] rounded-md text-[13px] font-bold cursor-pointer transition-all duration-150 hover:bg-primary hover:text-white">
+                        Tubes</div>
+                    <div
+                        class="px-5 py-2 bg-[#F1F3F7] text-[#4A5568] rounded-md text-[13px] font-bold cursor-pointer transition-all duration-150 hover:bg-primary hover:text-white">
+                        Corrugated</div>
+                    <div
+                        class="px-5 py-2 bg-[#F1F3F7] text-[#4A5568] rounded-md text-[13px] font-bold cursor-pointer transition-all duration-150 hover:bg-primary hover:text-white">
+                        Engineering Plastics</div>
                 </div>
             </div>
 
 
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10">
 
-                <div class="product-card group flex flex-col h-full">
+                <div
+                    class="bg-[#F1F3F7] rounded-none flex flex-col h-full transition-all duration-150 hover:shadow-lg group">
                     <a href="products.html" class="block overflow-hidden">
                         <img src="assets/23b30853a5a15b0647d290617242368be0837656.png" alt="Product"
                             class="w-full h-[280px] object-cover group-hover:opacity-90 transition-opacity">
@@ -199,7 +216,7 @@
                         </div>
                         <div class="mt-auto">
                             <button
-                                class="w-full btn-awesome bg-[#248fce] text-white font-bold text-[12px] tracking-wider uppercase py-4 rounded-[4px] shadow-sm">
+                                class="w-full bg-[#248fce] text-white font-bold text-[12px] tracking-wider uppercase py-4 rounded-[4px] shadow-sm hover:bg-primary-dark transition-all">
                                 DOWNLOAD NOW
                             </button>
                         </div>

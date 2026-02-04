@@ -1,11 +1,11 @@
-import '../css/index.css';
+
 
 
 
 
 
 const initPageTransitions = () => {
-    
+
     if (!document.getElementById('page-loader')) {
         const loader = document.createElement('div');
         loader.id = 'page-loader';
@@ -14,7 +14,7 @@ const initPageTransitions = () => {
 
     const loader = document.getElementById('page-loader');
 
-    
+
     document.addEventListener('click', (e) => {
         const link = e.target.closest('a');
         if (
@@ -27,16 +27,16 @@ const initPageTransitions = () => {
             e.preventDefault();
             const targetUrl = link.href;
 
-            
+
             loader.classList.add('animate');
 
             setTimeout(() => {
                 window.location.href = targetUrl;
-            }, 300); 
+            }, 300);
         }
     });
 
-    
+
     window.addEventListener('pageshow', (event) => {
         if (event.persisted && loader) {
             loader.classList.remove('animate');
@@ -113,18 +113,18 @@ const initMobileMenu = () => {
     if (toggleBtn && menu) {
         toggleBtn.addEventListener('click', () => {
             menu.classList.remove('translate-x-full');
-            document.body.style.overflow = 'hidden'; 
+            document.body.style.overflow = 'hidden';
         });
     }
 
     if (closeBtn && menu) {
         closeBtn.addEventListener('click', () => {
             menu.classList.add('translate-x-full');
-            document.body.style.overflow = ''; 
+            document.body.style.overflow = '';
         });
     }
 
-    
+
     menuLinks.forEach(link => {
         link.addEventListener('click', () => {
             menu.classList.add('translate-x-full');

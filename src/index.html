@@ -53,7 +53,7 @@
 <body class="font-sans antialiased text-slate-800 bg-white selection:bg-primary selection:text-white">
 
     <header class="sticky top-0 z-50 bg-white border-b border-slate-100">
-        <div class="container mx-auto px-4 py-4 flex items-center justify-between gap-4">
+        <div class="container mx-auto px-4 max-w-7xl py-4 flex items-center justify-between gap-4">
 
             <div class="flex items-center shrink-0">
                 <a href="index.html" class="block">
@@ -63,12 +63,18 @@
 
 
             <nav class="hidden lg:flex flex-1 items-center justify-center space-x-10 px-8">
-                <a href="index.html" class="nav-link text-slate-900 active">Home</a>
-                <a href="about.html" class="nav-link text-slate-900">About</a>
-                <a href="products.html" class="nav-link text-slate-900">Products</a>
-                <a href="industry.html" class="nav-link text-slate-900">Industry</a>
-                <a href="download.html" class="nav-link text-slate-900">Download</a>
-                <a href="contact.html" class="nav-link text-slate-900">Contact</a>
+                <a href="index.html"
+                    class="text-slate-900 font-medium hover:text-primary transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 after:w-full">Home</a>
+                <a href="about.html"
+                    class="text-slate-900 font-medium hover:text-primary transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 after:w-0 hover:after:w-full">About</a>
+                <a href="products.html"
+                    class="text-slate-900 font-medium hover:text-primary transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 after:w-0 hover:after:w-full">Products</a>
+                <a href="industry.html"
+                    class="text-slate-900 font-medium hover:text-primary transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 after:w-0 hover:after:w-full">Industry</a>
+                <a href="download.html"
+                    class="text-slate-900 font-medium hover:text-primary transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 after:w-0 hover:after:w-full">Download</a>
+                <a href="contact.html"
+                    class="text-slate-900 font-medium hover:text-primary transition-colors relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 after:w-0 hover:after:w-full">Contact</a>
             </nav>
 
 
@@ -97,7 +103,7 @@
 
     <div id="mobile-menu"
         class="fixed inset-0 z-[100] bg-white translate-x-full transition-transform duration-500 lg:hidden overflow-y-auto">
-        <div class="container mx-auto px-4 py-8 flex flex-col h-full min-h-screen">
+        <div class="container mx-auto px-4 max-w-7xl py-8 flex flex-col h-full min-h-screen">
 
             <div class="flex items-center justify-between mb-16">
                 <a href="index.html" class="block">
@@ -170,21 +176,22 @@
 
 
     <section class="relative py-16 md:py-24 bg-[#F2F3F5] overflow-hidden">
-        <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center relative z-10">
+        <div class="container mx-auto px-4 max-w-7xl flex flex-col lg:flex-row items-center relative z-10">
             <div class="lg:w-1/2 space-y-10">
-                <h1 class="text-primary hero-title">
-                    Strong. Durable. Trusted <br>
-                    Polyplast Products.
+                <h1 class="text-primary text-5xl md:text-[50px] font-bold leading-tight">
+                    Industrial Plastics. <br>
+                    Ready When You Need Them.
                 </h1>
                 <p class="text-slate-700 text-xl font-medium max-w-lg leading-relaxed">
-                    Bulk stockists & trusted suppliers of industrial plastic sheets, rods, and components across India.
+                    With over 25 years of industry experience, we help businesses avoid production delays by ensuring
+                    consistent access to quality engineering plastics across India.
                 </p>
                 <div class="flex flex-wrap gap-6">
                     <a href="products.html"
                         class="bg-primary text-white font-bold px-10 py-4 rounded-lg hover:bg-primary-dark transition-all transform hover:scale-105 active:scale-95 shadow-lg shadow-primary/20 inline-block text-center">
                         VIEW PRODUCTS
                     </a>
-                    <a href="download.html"
+                    <a href="contact.html"
                         class="bg-[#A7ACB9] text-white font-bold px-10 py-4 rounded-lg hover:bg-slate-500 transition-all transform hover:scale-105 active:scale-95 shadow-lg inline-block text-center">
                         CONTACT US
                     </a>
@@ -200,9 +207,14 @@
 
 
     <section class="py-12 bg-white">
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto px-4 max-w-7xl">
             <div class="mb-16 text-center text-[#248fce]">
-                <h3 class="nationwide-supply-title mb-10">Supplying to Retailers & Manufacturers Nationwide</h3>
+                <h3 class="text-4xl font-semibold leading-none text-center mb-6">Supplying to Retailers & Manufacturers
+                    Nationwide</h3>
+                <p class="text-center text-[#4A5568] max-w-3xl mx-auto mb-10 text-[18px]">
+                    We work closely with manufacturers, fabricators, distributors, and OEMs, supplying industrial
+                    plastics that meet real-world performance and operational demands.
+                </p>
 
                 <div class="space-y-6">
 
@@ -259,42 +271,50 @@
         <div class="container mx-auto px-4 max-w-7xl">
             <div class="lg:w-full space-y-6">
 
-                <h2 class="text-primary quality-products-title">
-                    Quality Plastic Products You Can Rely On
+                <h2 class="text-primary text-4xl font-semibold leading-none">
+                    Quality Plastic Products Backed by <br>Stock Strength & Expertise
                 </h2>
 
-
-                <div class="quality-text-regular space-y-8 max-w-6xl">
+                <div class="text-[20px] leading-relaxed font-normal text-[#333333] space-y-6 max-w-6xl">
                     <p>
-                        Polyplast offers a wide range of premium plastic products made with high-grade materials and
-                        advanced manufacturing standards. Our products are designed for strength, durability, and
-                        long-term performance across residential, commercial, and industrial use.
+                        Chennai Polyplast specialises in the stocking and supply of engineering and industrial-grade
+                        plastics, carefully sourced from trusted brands and maintained in ready inventory for rapid
+                        dispatch.
                     </p>
                     <p>
-                        With a strong focus on quality and customer satisfaction, Polyplast delivers reliable solutions
-                        that meet everyday and large-scale requirements.
+                        Our role goes beyond supply. We act as a material partner, helping customers select the right
+                        polymer grade, size, and format based on application, environment, and performance requirements.
                     </p>
                 </div>
 
+                <div class="pt-4">
+                    <h4 class="font-bold text-[18px] mb-4">Why customers choose us:</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center space-x-3 text-[18px] leading-relaxed font-normal text-[#333333]">
+                            <div class="w-1.5 h-1.5 bg-primary rounded-full shrink-0"></div>
+                            <span>Wide inventory of industrial & engineering plastics</span>
+                        </li>
+                        <li class="flex items-center space-x-3 text-[18px] leading-relaxed font-normal text-[#333333]">
+                            <div class="w-1.5 h-1.5 bg-primary rounded-full shrink-0"></div>
+                            <span>Multiple brands, grades, and material options</span>
+                        </li>
+                        <li class="flex items-center space-x-3 text-[18px] leading-relaxed font-normal text-[#333333]">
+                            <div class="w-1.5 h-1.5 bg-primary rounded-full shrink-0"></div>
+                            <span>Stock-ready model to reduce lead times</span>
+                        </li>
+                        <li class="flex items-center space-x-3 text-[18px] leading-relaxed font-normal text-[#333333]">
+                            <div class="w-1.5 h-1.5 bg-primary rounded-full shrink-0"></div>
+                            <span>Practical guidance backed by market experience</span>
+                        </li>
+                        <li class="flex items-center space-x-3 text-[18px] leading-relaxed font-normal text-[#333333]">
+                            <div class="w-1.5 h-1.5 bg-primary rounded-full shrink-0"></div>
+                            <span>Reliable supply for both bulk and repeat orders</span>
+                        </li>
+                    </ul>
+                </div>
 
-                <ul class="pt-4 space-y-3">
-                    <li class="flex items-center space-x-3 quality-text-regular">
-                        <div class="w-1 h-1 bg-slate-800 rounded-full shrink-0"></div>
-                        <span>Ready stock available</span>
-                    </li>
-                    <li class="flex items-center space-x-3 quality-text-regular">
-                        <div class="w-1 h-1 bg-slate-800 rounded-full shrink-0"></div>
-                        <span>Industrial-grade materials</span>
-                    </li>
-                    <li class="flex items-center space-x-3 quality-text-regular">
-                        <div class="w-1 h-1 bg-slate-800 rounded-full shrink-0"></div>
-                        <span>Multiple sizes & thicknesses</span>
-                    </li>
-                    <li class="flex items-center space-x-3 quality-text-regular">
-                        <div class="w-1 h-1 bg-slate-800 rounded-full shrink-0"></div>
-                        <span>Bulk & wholesale supply</span>
-                    </li>
-                </ul>
+
+
 
 
                 <div class="pt-8">
@@ -314,9 +334,9 @@
                 <div class="flex items-start space-x-6">
                     <img src="assets/icon (1).png" alt="Bulk Stock" class="w-16 h-16 object-contain shrink-0">
                     <div class="space-y-2">
-                        <h4 class="feature-title text-[#2D3748]">Bulk Stock Availability</h4>
+                        <h4 class="text-lg font-medium leading-[26px] text-[#2D3748]">Stock-Driven Supply Model</h4>
                         <p class="text-[#718096] text-[15px] leading-relaxed">
-                            Large inventory maintained for quick dispatch.
+                            Immediate availability to support continuous production.
                         </p>
                     </div>
                 </div>
@@ -325,9 +345,9 @@
                 <div class="flex items-start space-x-6">
                     <img src="assets/icon (2).png" alt="Retailer Supply" class="w-16 h-16 object-contain shrink-0">
                     <div class="space-y-2">
-                        <h4 class="feature-title text-[#2D3748]">Retailer & Dealer Supply</h4>
+                        <h4 class="text-lg font-medium leading-[26px] text-[#2D3748]">Optimised Logistics</h4>
                         <p class="text-[#718096] text-[15px] leading-relaxed">
-                            Trusted supplier to retailers and distributors.
+                            Regionally planned inventory to reduce delivery delays.
                         </p>
                     </div>
                 </div>
@@ -336,9 +356,9 @@
                 <div class="flex items-start space-x-6">
                     <img src="assets/icon (3).png" alt="Industry Solutions" class="w-16 h-16 object-contain shrink-0">
                     <div class="space-y-2">
-                        <h4 class="feature-title text-[#2D3748]">Industry-Specific Solutions</h4>
+                        <h4 class="text-lg font-medium leading-[26px] text-[#2D3748]">Consultative Support</h4>
                         <p class="text-[#718096] text-[15px] leading-relaxed">
-                            Electrical, fabrication, packaging, construction, signage, etc.
+                            Material selection guidance for demanding applications.
                         </p>
                     </div>
                 </div>
@@ -350,7 +370,13 @@
         <div class="container mx-auto px-4 max-w-7xl">
 
             <div class="flex flex-col md:flex-row justify-between items-center mb-16 gap-8">
-                <h2 class="text-[32px] md:text-[42px] font-bold text-[#2D3748]">Our Products</h2>
+                <div>
+                    <h2 class="text-[32px] md:text-[42px] font-bold text-[#2D3748] mb-4">Our Products</h2>
+                    <p class="text-[#718096] text-[16px] leading-relaxed max-w-2xl">
+                        We stock a comprehensive range of plastic sheets, rods, tubes, and engineered polymer materials,
+                        suitable for machining, fabrication, insulation, wear resistance, and structural use.
+                    </p>
+                </div>
 
 
                 <div class="flex flex-wrap gap-2 md:gap-3">
@@ -516,11 +542,10 @@
         <div class="container mx-auto px-4 max-w-7xl">
 
             <div class="text-center max-w-4xl mx-auto mb-16 space-y-4">
-                <h2 class="industries-serve-title">“Industries We Serve”</h2>
+                <h2 class="text-4xl font-semibold leading-none text-center">“Industries We Serve”</h2>
                 <p class="text-[#4A5568] text-[15px] md:text-[16px] leading-relaxed">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book.
+                    Our approach is strongly industry-centric. We supply plastics designed to perform in demanding
+                    production and operating environments.
                 </p>
             </div>
 
@@ -529,55 +554,82 @@
 
                 <div
                     class="w-full md:w-[calc(33.33%-1rem)] bg-[#F1F3F7] p-8 rounded-2xl space-y-4 shadow-sm border border-slate-50 transition-all hover:shadow-md">
-                    <img src="assets/building-construction-icon 1.png" alt="Construction"
+                    <img src="assets/building-construction-icon 1.png" alt="Automotive"
                         class="w-12 h-12 object-contain">
-                    <h4 class="industry-title">Construction & Infrastructure</h4>
+                    <h4 class="text-xl font-medium leading-7 text-[#1a1a1a]">Automotive & Components</h4>
                     <p class="text-[#4A5568] text-[14px] leading-relaxed">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Plastics for fixtures, jigs, inserts, and machined components.
                     </p>
                 </div>
-
 
                 <div
                     class="w-full md:w-[calc(33.33%-1rem)] bg-[#F1F3F7] p-8 rounded-2xl space-y-4 shadow-sm border border-slate-50 transition-all hover:shadow-md">
                     <img src="assets/electric-icon 1.png" alt="Electrical" class="w-12 h-12 object-contain">
-                    <h4 class="industry-title">Electrical & Electronics</h4>
+                    <h4 class="text-xl font-medium leading-7 text-[#1a1a1a]">Electrical & Electronics</h4>
                     <p class="text-[#4A5568] text-[14px] leading-relaxed">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Insulating plastics for panels, ducts, PCB supports, and enclosures.
                     </p>
                 </div>
-
 
                 <div
                     class="w-full md:w-[calc(33.33%-1rem)] bg-[#F1F3F7] p-8 rounded-2xl space-y-4 shadow-sm border border-slate-50 transition-all hover:shadow-md">
-                    <img src="assets/factory-industry-manufacturing-production-svgrepo-com 1.png" alt="Manufacturing"
+                    <img src="assets/factory-industry-manufacturing-production-svgrepo-com 1.png" alt="Chemical"
                         class="w-12 h-12 object-contain">
-                    <h4 class="industry-title">Manufacturing Units</h4>
+                    <h4 class="text-xl font-medium leading-7 text-[#1a1a1a]">Chemical & Process Industries</h4>
                     <p class="text-[#4A5568] text-[14px] leading-relaxed">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Materials resistant to chemicals, heat, and abrasion.
                     </p>
                 </div>
-
 
                 <div
-                    class="w-full md:w-[calc(40%-1rem)] bg-[#F1F3F7] p-8 rounded-2xl space-y-4 shadow-sm border border-slate-50 transition-all hover:shadow-md mx-auto md:mx-0">
-                    <img src="assets/delivery-packaging-box-svgrepo-com 1.png" alt="Packaging"
+                    class="w-full md:w-[calc(33.33%-1rem)] bg-[#F1F3F7] p-8 rounded-2xl space-y-4 shadow-sm border border-slate-50 transition-all hover:shadow-md">
+                    <img src="assets/delivery-packaging-box-svgrepo-com 1.png" alt="FMCG"
                         class="w-12 h-12 object-contain">
-                    <h4 class="industry-title">Packaging & Fabrication</h4>
+                    <h4 class="text-xl font-medium leading-7 text-[#1a1a1a]">FMCG & Packaging</h4>
                     <p class="text-[#4A5568] text-[14px] leading-relaxed">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Plastic sheets and components used in packaging machinery and systems.
                     </p>
                 </div>
-
 
                 <div
-                    class="w-full md:w-[calc(40%-1rem)] bg-[#F1F3F7] p-8 rounded-2xl space-y-4 shadow-sm border border-slate-50 transition-all hover:shadow-md mx-auto md:mx-0">
-                    <img src="assets/distributor-icon 1.png" alt="Retailers" class="w-12 h-12 object-contain">
-                    <h4 class="industry-title">Retailers & Distributors</h4>
+                    class="w-full md:w-[calc(33.33%-1rem)] bg-[#F1F3F7] p-8 rounded-2xl space-y-4 shadow-sm border border-slate-50 transition-all hover:shadow-md">
+                    <img src="assets/distributor-icon 1.png" alt="Textile" class="w-12 h-12 object-contain">
+                    <h4 class="text-xl font-medium leading-7 text-[#1a1a1a]">Textile Manufacturing</h4>
                     <p class="text-[#4A5568] text-[14px] leading-relaxed">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Wear-resistant plastics for guides, bearings, and machine parts.
                     </p>
                 </div>
+
+                <div
+                    class="w-full md:w-[calc(33.33%-1rem)] bg-[#F1F3F7] p-8 rounded-2xl space-y-4 shadow-sm border border-slate-50 transition-all hover:shadow-md">
+                    <img src="assets/building-construction-icon 1.png" alt="Agriculture"
+                        class="w-12 h-12 object-contain">
+                    <h4 class="text-xl font-medium leading-7 text-[#1a1a1a]">Agriculture & Horticulture</h4>
+                    <p class="text-[#4A5568] text-[14px] leading-relaxed">
+                        Plastics for irrigation systems, greenhouse structures, and supports.
+                    </p>
+                </div>
+
+                <div
+                    class="w-full md:w-[calc(48%-1rem)] bg-[#F1F3F7] p-8 rounded-2xl space-y-4 shadow-sm border border-slate-50 transition-all hover:shadow-md">
+                    <img src="assets/building-construction-icon 1.png" alt="Construction"
+                        class="w-12 h-12 object-contain">
+                    <h4 class="text-xl font-medium leading-7 text-[#1a1a1a]">Construction & Infrastructure</h4>
+                    <p class="text-[#4A5568] text-[14px] leading-relaxed">
+                        Robust plastic sheets and rods for fabrication and structural use.
+                    </p>
+                </div>
+
+                <div
+                    class="w-full md:w-[calc(48%-1rem)] bg-[#F1F3F7] p-8 rounded-2xl space-y-4 shadow-sm border border-slate-50 transition-all hover:shadow-md">
+                    <img src="assets/delivery-packaging-box-svgrepo-com 1.png" alt="Logistics"
+                        class="w-12 h-12 object-contain">
+                    <h4 class="text-xl font-medium leading-7 text-[#1a1a1a]">Logistics & Warehousing</h4>
+                    <p class="text-[#4A5568] text-[14px] leading-relaxed">
+                        Polymer boards and components for racking systems and conveyors.
+                    </p>
+                </div>
+
             </div>
         </div>
     </section>
@@ -590,14 +642,14 @@
 
                 <div class="lg:w-[42%] space-y-8">
                     <h2 class="text-[34px] md:text-[42px] font-bold text-[#2D3748] leading-[1.15]">
-                        Looking for a reliable plastic stockist or bulk supplier?
+                        Looking for a Dependable Plastic Stockist or Bulk Supplier?
                     </h2>
                     <p class="text-[#718096] text-[16px] leading-[1.7] max-w-md">
-                        Whether you need bulk orders or custom products, Polyplast is here to help. Get high-quality
-                        products at competitive prices with trusted support.
+                        From urgent material requirements to long-term supply partnerships, Chennai Polyplast supports
+                        your operations with availability, expertise, and dependable service.
                     </p>
                     <div class="pt-2">
-                        <a href="download.html"
+                        <a href="contact.html"
                             class="px-10 py-4 bg-[#248fce] text-white font-bold text-[14px] uppercase rounded-[4px] shadow-lg hover:bg-primary-dark transition-all inline-block">
                             CONTACT US
                         </a>
@@ -706,16 +758,18 @@
 
 
     <section class="py-12 bg-white">
-        <div class="container mx-auto px-4 max-w-6xl">
+        <div class="container mx-auto px-4 max-w-7xl">
             <div
                 class="bg-[#248fce] rounded-[20px] p-10 md:p-16 flex flex-col md:flex-row items-center justify-between gap-10 shadow-lg">
                 <h2 class="text-[32px] md:text-[38px] font-bold text-white leading-[1.2] max-w-2xl">
-                    Download your Broucher for <br class="hidden md:block">more information
+                    Download Our Brochure for <br class="hidden md:block">More Information
+                    <span class="block text-white/80 text-[16px] font-normal mt-3">Explore our product range, material
+                        capabilities, and industry applications in detail.</span>
                 </h2>
-                <button
-                    class="bg-white text-[#333] font-bold text-[13px] tracking-tight uppercase px-12 py-5 rounded-[8px] shadow-md hover:bg-slate-50 transition-all shrink-0">
+                <a href="download.html"
+                    class="bg-white text-[#333] font-bold text-[13px] tracking-tight uppercase px-12 py-5 rounded-[8px] shadow-md hover:bg-slate-50 transition-all shrink-0 inline-block text-center">
                     DOWNLOAD BROCHURE
-                </button>
+                </a>
             </div>
         </div>
     </section>
@@ -731,16 +785,19 @@
                     <h2 class="text-[32px] md:text-[42px] font-bold text-[#248fce] leading-tight">
                         Stock & Supply Capability
                     </h2>
+                    Our strength lies in inventory planning and supply efficiency. With a regionally optimised stock
+                    model, we ensure faster availability across Chennai, Tamil Nadu, South India, and beyond.
+                    </p>
                     <p class="text-[#4A5568] text-[16px] md:text-[18px] leading-relaxed max-w-xl font-medium">
-                        We maintain a ready inventory of industrial plastic materials to support urgent and bulk
-                        requirements for retailers and manufacturers.
+                        This allows our customers to operate lean, reduce downtime, and scale production without
+                        material uncertainty.
                     </p>
                     <div class="flex flex-wrap gap-4 pt-4">
                         <a href="products.html"
                             class="px-8 py-4 bg-[#248fce] text-white font-bold text-[13px] uppercase rounded-[6px] shadow-sm hover:bg-[#1a7a9c] transition-all">
                             VIEW PRODUCTS
                         </a>
-                        <a href="download.html"
+                        <a href="contact.html"
                             class="px-8 py-4 bg-[#A0AEC0] text-white font-bold text-[13px] uppercase rounded-[6px] shadow-sm hover:bg-[#718096] transition-all">
                             CONTACT US
                         </a>
@@ -758,63 +815,98 @@
 
 
     <section class="py-24 bg-white">
-        <div class="container mx-auto px-4 max-w-4xl">
-            <h2 class="text-[32px] md:text-[40px] font-bold text-center text-[#1a1a1a] mb-16">
-                Frequently asked questions
-            </h2>
+        <div class="container mx-auto px-4 max-w-7xl">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-[32px] md:text-[40px] font-bold text-center text-[#1a1a1a] mb-16">
+                    Frequently asked questions
+                </h2>
 
-            <div class="space-y-0 border-t border-[#E2E8F0]">
+                <div class="space-y-4 border-t border-[#E2E8F0]">
 
-                <div class="border-b border-[#E2E8F0] py-6">
-                    <button class="flex items-center justify-between w-full text-left group">
-                        <span
-                            class="text-[16px] md:text-[18px] font-bold text-[#4A5568] group-hover:text-[#248fce] transition-colors">Do
-                            you supply in bulk quantities?</span>
-                        <i data-lucide="chevron-down"
-                            class="w-5 h-5 text-[#4A5568] group-hover:text-[#248fce] transition-all"></i>
-                    </button>
-                </div>
+                    <div class="border-b border-[#E2E8F0] py-6">
+                        <details class="group">
+                            <summary
+                                class="flex items-center justify-between w-full text-left cursor-pointer list-none">
+                                <span
+                                    class="text-[16px] md:text-[18px] font-bold text-[#4A5568] group-hover:text-[#248fce] transition-colors">Do
+                                    you supply industrial plastics in bulk?</span>
+                                <i data-lucide="chevron-down"
+                                    class="w-5 h-5 text-[#4A5568] group-open:rotate-180 transition-transform"></i>
+                            </summary>
+                            <div class="pt-4 text-[#718096] leading-relaxed">
+                                Yes. We specialise in bulk and repeat supply for manufacturers and fabricators.
+                            </div>
+                        </details>
+                    </div>
 
-                <div class="border-b border-[#E2E8F0] py-6">
-                    <button class="flex items-center justify-between w-full text-left group">
-                        <span
-                            class="text-[16px] md:text-[18px] font-bold text-[#4A5568] group-hover:text-[#248fce] transition-colors">What
-                            is your minimum order quantity (MOQ)?</span>
-                        <i data-lucide="chevron-down"
-                            class="w-5 h-5 text-[#4A5568] group-hover:text-[#248fce] transition-all"></i>
-                    </button>
-                </div>
+                    <div class="border-b border-[#E2E8F0] py-6">
+                        <details class="group">
+                            <summary
+                                class="flex items-center justify-between w-full text-left cursor-pointer list-none">
+                                <span
+                                    class="text-[16px] md:text-[18px] font-bold text-[#4A5568] group-hover:text-[#248fce] transition-colors">Do
+                                    you work with retailers and distributors?</span>
+                                <i data-lucide="chevron-down"
+                                    class="w-5 h-5 text-[#4A5568] group-open:rotate-180 transition-transform"></i>
+                            </summary>
+                            <div class="pt-4 text-[#718096] leading-relaxed">
+                                Yes. We support both direct industrial customers and distribution partners.
+                            </div>
+                        </details>
+                    </div>
 
-                <div class="border-b border-[#E2E8F0] py-6">
-                    <button class="flex items-center justify-between w-full text-left group">
-                        <span
-                            class="text-[16px] md:text-[18px] font-bold text-[#4A5568] group-hover:text-[#248fce] transition-colors">Do
-                            you supply to retailers or distributors?</span>
-                        <i data-lucide="chevron-down"
-                            class="w-5 h-5 text-[#4A5568] group-hover:text-[#248fce] transition-all"></i>
-                    </button>
-                </div>
+                    <div class="border-b border-[#E2E8F0] py-6">
+                        <details class="group">
+                            <summary
+                                class="flex items-center justify-between w-full text-left cursor-pointer list-none">
+                                <span
+                                    class="text-[16px] md:text-[18px] font-bold text-[#4A5568] group-hover:text-[#248fce] transition-colors">Can
+                                    you help with material selection?</span>
+                                <i data-lucide="chevron-down"
+                                    class="w-5 h-5 text-[#4A5568] group-open:rotate-180 transition-transform"></i>
+                            </summary>
+                            <div class="pt-4 text-[#718096] leading-relaxed">
+                                Absolutely. We provide guidance based on application, environment, and usage.
+                            </div>
+                        </details>
+                    </div>
 
-                <div class="border-b border-[#E2E8F0] py-6">
-                    <button class="flex items-center justify-between w-full text-left group">
-                        <span
-                            class="text-[16px] md:text-[18px] font-bold text-[#4A5568] group-hover:text-[#248fce] transition-colors">Can
-                            you provide GST invoices & test certificates?</span>
-                        <i data-lucide="chevron-down"
-                            class="w-5 h-5 text-[#4A5568] group-hover:text-[#248fce] transition-all"></i>
-                    </button>
-                </div>
+                    <div class="border-b border-[#E2E8F0] py-6">
+                        <details class="group">
+                            <summary
+                                class="flex items-center justify-between w-full text-left cursor-pointer list-none">
+                                <span
+                                    class="text-[16px] md:text-[18px] font-bold text-[#4A5568] group-hover:text-[#248fce] transition-colors">What
+                                    regions do you supply to?</span>
+                                <i data-lucide="chevron-down"
+                                    class="w-5 h-5 text-[#4A5568] group-open:rotate-180 transition-transform"></i>
+                            </summary>
+                            <div class="pt-4 text-[#718096] leading-relaxed">
+                                We supply across Chennai, Tamil Nadu, South India, and pan-India.
+                            </div>
+                        </details>
+                    </div>
 
-                <div class="border-b border-[#E2E8F0] py-6">
-                    <button class="flex items-center justify-between w-full text-left group">
-                        <span
-                            class="text-[16px] md:text-[18px] font-bold text-[#4A5568] group-hover:text-[#248fce] transition-colors">What
-                            is your delivery timeline?</span>
-                        <i data-lucide="chevron-down"
-                            class="w-5 h-5 text-[#4A5568] group-hover:text-[#248fce] transition-all"></i>
-                    </button>
+                    <div class="border-b border-[#E2E8F0] py-6">
+                        <details class="group">
+                            <summary
+                                class="flex items-center justify-between w-full text-left cursor-pointer list-none">
+                                <span
+                                    class="text-[16px] md:text-[18px] font-bold text-[#4A5568] group-hover:text-[#248fce] transition-colors">How
+                                    quickly can materials be delivered?</span>
+                                <i data-lucide="chevron-down"
+                                    class="w-5 h-5 text-[#4A5568] group-open:rotate-180 transition-transform"></i>
+                            </summary>
+                            <div class="pt-4 text-[#718096] leading-relaxed">
+                                Delivery timelines depend on stock and location, but our model prioritises fast
+                                dispatch.
+                            </div>
+                        </details>
+                    </div>
+
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -824,9 +916,8 @@
             <div class="text-center mb-16">
                 <h2 class="text-[34px] md:text-[40px] font-bold text-[#1a1a1a] mb-6">Client Feedback</h2>
                 <p class="text-[#718096] text-[16px] leading-[1.6] max-w-2xl mx-auto">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br
-                        class="hidden md:block">
-                    Lorem Ipsum has been the industry's standard dummy text ever
+                    Our customers value us for consistent stock availability, reliable supply, and practical industry
+                    knowledge that supports real manufacturing needs.
                 </p>
             </div>
 
@@ -885,12 +976,14 @@
         <div class="container mx-auto px-4 max-w-7xl">
             <div class="flex flex-col md:flex-row items-center justify-between gap-10">
                 <h2 class="text-[32px] md:text-[42px] font-bold text-white leading-[1.2]">
-                    Download your Broucher for <br>more information
+                    Download Our Brochure for <br class="hidden md:block"> More Information
+                    <span class="block text-white/80 text-[16px] font-normal mt-3">Get a complete overview of our
+                        products, materials, and supply capabilities.</span>
                 </h2>
-                <button
-                    class="bg-white text-[#333] font-bold text-[14px] uppercase px-12 py-5 rounded-[8px] shadow-sm hover:bg-slate-50 transition-all shrink-0">
+                <a href="download.html"
+                    class="bg-white text-[#333] font-bold text-[14px] uppercase px-12 py-5 rounded-[8px] shadow-sm hover:bg-slate-50 transition-all shrink-0 inline-block text-center">
                     DOWNLOAD BROCHURE
-                </button>
+                </a>
             </div>
         </div>
     </section>
