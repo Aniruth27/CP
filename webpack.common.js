@@ -41,14 +41,22 @@ export default {
                         list: [
                             { tag: "img", attribute: "src", type: "src" },
                             { tag: "source", attribute: "srcset", type: "srcset" },
+                            {
+                                tag: "a",
+                                attribute: "href",
+                                type: "src",
+                                filter: (tag, attribute, attributes, resourcePath) => {
+                                    return /\.pdf$/i.test(attributes.href);
+                                },
+                            },
                         ],
                     },
                 },
             },
 
-            // Images
+            // Assets (Images & PDFs)
             {
-                test: /\.(png|jpe?g|gif|svg)$/i,
+                test: /\.(png|jpe?g|gif|svg|pdf)$/i,
                 type: "asset/resource",
             },
 
