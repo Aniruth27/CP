@@ -1,8 +1,6 @@
 
-
-
-
-
+import '../assets/CP_Main_Catalogue.pdf';
+import '../assets/CP_Mini_Catalogue.pdf';
 
 const initPageTransitions = () => {
 

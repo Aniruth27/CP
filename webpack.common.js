@@ -45,8 +45,8 @@ export default {
                                 tag: "a",
                                 attribute: "href",
                                 type: "src",
-                                filter: (tag, attribute, attributes, resourcePath) => {
-                                    return /\.pdf$/i.test(attributes.href);
+                                filter: (tag, attribute, value, resourcePath) => {
+                                    return /\.pdf$/i.test(value);
                                 },
                             },
                         ],
