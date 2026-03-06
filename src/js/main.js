@@ -1,4 +1,3 @@
-
 import '../assets/CP_Main_Catalogue.pdf';
 import '../assets/CP_Mini_Catalogue.pdf';
 
@@ -147,5 +146,33 @@ if (document.readyState === 'loading') {
     initHeaderScroll();
     initMobileMenu();
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const contactForm = document.getElementById('contactForm');
+
+    contactForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        const formData = {
+            name: event.target.name.value,
+            email: event.target.email.value,
+            message: event.target.message.value,
+        };
+
+        // Retrieve existing submissions from local storage
+        const submissions = JSON.parse(localStorage.getItem('contactSubmissions')) || [];
+
+        // Add new submission
+        submissions.push(formData);
+
+        // Save back to local storage
+        localStorage.setItem('contactSubmissions', JSON.stringify(submissions));
+
+        alert('Thank you for your message!');
+
+        // Reset the form
+        contactForm.reset();
+    });
+});
 
 
