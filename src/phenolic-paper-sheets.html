@@ -324,11 +324,15 @@
 
             <!-- Tabs for Tables -->
             <div class="mt-16 space-y-8">
-                <div class="flex flex-wrap gap-4 border-b border-slate-200">
-                    <button class="tab-btn px-6 py-3 font-bold text-primary border-b-2 border-primary"
-                        id="tab-characteristics">Product Characteristics</button>
-                    <button class="tab-btn px-6 py-3 font-bold text-slate-400 hover:text-primary transition-colors"
-                        id="tab-specification">Specification</button>
+                <div
+                    class="flex overflow-x-auto flex-nowrap justify-start md:justify-center items-center gap-x-0 mb-10 max-w-6xl mx-auto pb-2 scrollbar-hide">
+                    <div id="tab-characteristics"
+                        class="px-6 py-4 font-medium cursor-pointer border-b-2 border-primary text-primary transition-all tab-btn active whitespace-nowrap">
+                        Product Characteristics</div>
+                    <div class="w-[1.5px] h-10 bg-slate-200 mx-6 shrink-0 hidden md:block"></div>
+                    <div id="tab-specification"
+                        class="px-6 py-4 font-medium cursor-pointer text-[#BCC1CF] hover:text-primary transition-all tab-btn whitespace-nowrap">
+                        Specification</div>
                 </div>
 
                 <!-- Product Characteristics Table -->
@@ -406,10 +410,6 @@
                     </div>
                 </div>
 
-                <p class="text-[12px] text-slate-400 mt-4 italic">Note: The technical data and values provided in this
-                    catalogue are for reference purposes only. Actual performance and specifications may vary depending
-                    on processing conditions and application requirements. The company reserves the right to modify data
-                    without prior notice.</p>
             </div>
         </div>
     </main>
