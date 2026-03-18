@@ -177,6 +177,17 @@
     <main class="py-16 md:py-24">
         <div class="container mx-auto px-4 max-w-7xl">
             <div class="flex flex-col lg:flex-row gap-12 lg:gap-20 mb-16">
+                <!-- Vertical Thumbnails -->
+                    <div class="hidden md:flex flex-col gap-4 shrink-0">
+                        <img src="assets/Rectangle 78.png" alt="Thumbnail"
+                            class="w-[100px] h-[100px] object-cover cursor-pointer border border-slate-200">
+                        <img src="assets/Rectangle 79.png" alt="Thumbnail"
+                            class="w-[100px] h-[100px] object-cover cursor-pointer border border-slate-200">
+                        <img src="assets/Rectangle 80.png" alt="Thumbnail"
+                            class="w-[100px] h-[100px] object-cover cursor-pointer border border-slate-200">
+                        <img src="assets/Rectangle 81.png" alt="Thumbnail"
+                            class="w-[100px] h-[100px] object-cover cursor-pointer border border-slate-200">
+                    </div>
                 <!-- Left: Image Section -->
                 <div class="lg:w-1/2 grid grid-cols-2 gap-4">
                     <img src="assets/phenolic.png" alt="Phenolic Fabric Sheets"
@@ -215,7 +226,7 @@
                     </div>
 
                     <div class="space-y-4 pt-4">
-                        <h3 class="text-xl font-bold text-slate-800 font-poppins">Main Benefits</h3>
+                        <!-- <h3 class="text-xl font-bold text-slate-800 font-poppins">Main Benefits</h3>
                         <div
                             class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-600 text-[14px] leading-relaxed font-poppins">
                             <ul class="space-y-2">
@@ -258,7 +269,7 @@
                                     <span>Excellent machinability into precision parts</span>
                                 </li>
                             </ul>
-                        </div>
+                        </div> -->
                     </div>
 
                     <div class="bg-slate-100 p-6 rounded-sm text-slate-800 space-y-6">
@@ -290,59 +301,103 @@
             </div>
 
             <!-- Typical Application Section -->
-            <section class="py-12 border-t border-slate-100">
-                <h2 class="text-2xl font-bold text-slate-800 mb-8 uppercase">Typical Application</h2>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div class="space-y-4">
-                        <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
-                                <i data-lucide="settings" class="w-5 h-5 text-primary"></i>
+
+            <section class="py-16 border-t border-slate-100">
+                           <h2 class="text-2xl font-bold text-slate-800 mb-8 text-center">Typical Application</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Industrial & Mechanical -->
+                    <div class="bg-white border border-slate-100 rounded-lg p-6 hover:shadow-md transition-all">
+                        <div class="flex items-start gap-4 mb-6">
+                            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
+                                <i data-lucide="settings" class="w-6 h-6 text-primary"></i>
                             </div>
-                            <h3 class="font-bold text-slate-800">Industrial & Mechanical</h3>
+                            <h3 class="font-bold text-slate-800 text-[16px]">Industrial & Mechanical</h3>
                         </div>
-                        <ul class="text-[14px] text-slate-600 space-y-1 ml-13 list-disc">
-                            <li>Bearings, bushings, thrust washers</li>
-                            <li>Gears, sprockets, pulleys</li>
-                            <li>Wear plates, rollers, cams</li>
-                            <li>Clutch & brake components</li>
+                        <ul class="text-[14px] text-slate-600 space-y-2">
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary font-bold mt-0.5">•</span>
+                                <span>Bearings, bushings, thrust washers</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary font-bold mt-0.5">•</span>
+                                <span>Gears, sprockets, pulleys</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary font-bold mt-0.5">•</span>
+                                <span>Wear plates, rollers, cams</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary font-bold mt-0.5">•</span>
+                                <span>Clutch & brake components</span>
+                            </li>
                         </ul>
                     </div>
-                    <div class="space-y-4">
-                        <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
-                                <i data-lucide="tool" class="w-5 h-5 text-primary"></i>
+
+                    <!-- General Engineering -->
+                    <div class="bg-white border border-slate-100 rounded-lg p-6 hover:shadow-md transition-all">
+                        <div class="flex items-start gap-4 mb-6">
+                            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
+                                <i data-lucide="wrench" class="w-6 h-6 text-primary"></i>
                             </div>
-                            <h3 class="font-bold text-slate-800">General Engineering</h3>
+                            <h3 class="font-bold text-slate-800 text-[16px]">General Engineering</h3>
                         </div>
-                        <ul class="text-[14px] text-slate-600 space-y-1 ml-13 list-disc">
-                            <li>Machine tool guides</li>
-                            <li>Hydraulic & pneumatic sealing parts</li>
-                            <li>Support rings and spacers</li>
+                        <ul class="text-[14px] text-slate-600 space-y-2">
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary font-bold mt-0.5">•</span>
+                                <span>Machine tool guides</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary font-bold mt-0.5">•</span>
+                                <span>Hydraulic & pneumatic sealing parts</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary font-bold mt-0.5">•</span>
+                                <span>Support rings and spacers</span>
+                            </li>
                         </ul>
                     </div>
-                    <div class="space-y-4">
-                        <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
-                                <i data-lucide="zap" class="w-5 h-5 text-primary"></i>
+
+                    <!-- Electrical & Electronics -->
+                    <div class="bg-white border border-slate-100 rounded-lg p-6 hover:shadow-md transition-all">
+                        <div class="flex items-start gap-4 mb-6">
+                            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
+                                <i data-lucide="zap" class="w-6 h-6 text-primary"></i>
                             </div>
-                            <h3 class="font-bold text-slate-800">Electrical & Electronics</h3>
+                            <h3 class="font-bold text-slate-800 text-[16px]">Electrical & Electronics</h3>
                         </div>
-                        <ul class="text-[14px] text-slate-600 space-y-1 ml-13 list-disc">
-                            <li>Insulating components</li>
-                            <li>Transformer & motor slot wedges</li>
-                            <li>Terminal boards & switchgear</li>
+                        <ul class="text-[14px] text-slate-600 space-y-2">
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary font-bold mt-0.5">•</span>
+                                <span>Insulating components</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary font-bold mt-0.5">•</span>
+                                <span>Transformer & motor slot wedges</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary font-bold mt-0.5">•</span>
+                                <span>Terminal boards & switchgear</span>
+                            </li>
                         </ul>
                     </div>
-                    <div class="space-y-4">
-                        <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
-                                <i data-lucide="truck" class="w-5 h-5 text-primary"></i>
+
+                    <!-- Automotive & Transport -->
+                    <div class="bg-white border border-slate-100 rounded-lg p-6 hover:shadow-md transition-all">
+                        <div class="flex items-start gap-4 mb-6">
+                            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
+                                <i data-lucide="truck" class="w-6 h-6 text-primary"></i>
                             </div>
-                            <h3 class="font-bold text-slate-800">Automotive & Transport</h3>
+                            <h3 class="font-bold text-slate-800 text-[16px]">Automotive & Transport</h3>
                         </div>
-                        <ul class="text-[14px] text-slate-600 space-y-1 ml-13 list-disc">
-                            <li>Brake linings & clutch plates</li>
-                            <li>Shock & vibration damping parts</li>
+                        <ul class="text-[14px] text-slate-600 space-y-2">
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary font-bold mt-0.5">•</span>
+                                <span>Brake linings & clutch plates</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary font-bold mt-0.5">•</span>
+                                <span>Shock & vibration damping parts</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -443,6 +498,18 @@
 
 
             </div>
+        </div>
+         <div class="mt-16 flex flex-col sm:flex-row items-center justify-center gap-6">
+            <a href="#"
+                class="flex items-center gap-3 bg-primary text-white font-bold px-8 py-5 rounded-md hover:bg-primary-dark transition-all transform hover:scale-105 shadow-lg group">
+                <i data-lucide="download" class="w-5 h-5 group-hover:animate-bounce"></i>
+                <span>DOWNLOAD PHENOLIC FABRIC SHEETS CATALOGUE</span>
+            </a>
+            <a href="#"
+                class="flex items-center gap-3 bg-white text-primary border-2 border-primary font-bold px-8 py-5 rounded-md hover:bg-primary hover:text-white transition-all transform hover:scale-105 shadow-md group">
+                <i data-lucide="file-text" class="w-5 h-5 group-hover:scale-110 transition-transform"></i>
+                <span>DOWNLOAD COMPLETE CATALOGUE</span>
+            </a>
         </div>
     </main>
 
