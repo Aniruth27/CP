@@ -106,7 +106,10 @@ const initMobileMenu = () => {
     const closeBtn = document.getElementById('mobile-menu-close');
     const menu = document.getElementById('mobile-menu');
     const menuLinks = document.querySelectorAll('#mobile-menu a');
+    const mobileProductsToggle = document.getElementById('mobile-products-toggle');
+    const mobileProductsMenu = document.getElementById('mobile-products-menu');
 
+    // Handle mobile menu open/close
     if (toggleBtn && menu) {
         toggleBtn.addEventListener('click', () => {
             menu.classList.remove('translate-x-full');
@@ -121,13 +124,31 @@ const initMobileMenu = () => {
         });
     }
 
-
+    // Close menu when any link is clicked
     menuLinks.forEach(link => {
         link.addEventListener('click', () => {
             menu.classList.add('translate-x-full');
             document.body.style.overflow = '';
         });
     });
+
+    // Handle mobile products submenu toggle
+    if (mobileProductsToggle && mobileProductsMenu) {
+        const productsChevron = mobileProductsToggle.querySelector('[data-lucide="chevron-down"]');
+        mobileProductsToggle.addEventListener('click', (e) => {
+            e.preventDefault();
+            const isHidden = mobileProductsMenu.classList.contains('hidden');
+            if (isHidden) {
+                mobileProductsMenu.classList.remove('hidden');
+                mobileProductsMenu.classList.add('flex');
+                if (productsChevron) productsChevron.classList.add('rotate-180');
+            } else {
+                mobileProductsMenu.classList.remove('flex');
+                mobileProductsMenu.classList.add('hidden');
+                if (productsChevron) productsChevron.classList.remove('rotate-180');
+            }
+        });
+    }
 };
 
 
@@ -150,29 +171,31 @@ if (document.readyState === 'loading') {
 document.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.getElementById('contactForm');
 
-    contactForm.addEventListener('submit', (event) => {
-        event.preventDefault();
+    if (contactForm) {
+        contactForm.addEventListener('submit', (event) => {
+            event.preventDefault();
 
-        const formData = {
-            name: event.target.name.value,
-            email: event.target.email.value,
-            message: event.target.message.value,
-        };
+            const formData = {
+                name: event.target.name.value,
+                email: event.target.email.value,
+                message: event.target.message.value,
+            };
 
-        // Retrieve existing submissions from local storage
-        const submissions = JSON.parse(localStorage.getItem('contactSubmissions')) || [];
+            // Retrieve existing submissions from local storage
+            const submissions = JSON.parse(localStorage.getItem('contactSubmissions')) || [];
 
-        // Add new submission
-        submissions.push(formData);
+            // Add new submission
+            submissions.push(formData);
 
-        // Save back to local storage
-        localStorage.setItem('contactSubmissions', JSON.stringify(submissions));
+            // Save back to local storage
+            localStorage.setItem('contactSubmissions', JSON.stringify(submissions));
 
-        alert('Thank you for your message!');
+            alert('Thank you for your message!');
 
-        // Reset the form
-        contactForm.reset();
-    });
+            // Reset the form
+            contactForm.reset();
+        });
+    }
 });
 
 
