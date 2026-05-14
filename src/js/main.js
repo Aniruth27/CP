@@ -151,6 +151,35 @@ const initMobileMenu = () => {
     }
 };
 
+const initTabs = () => {
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    if (tabBtns.length === 0 || tabContents.length === 0) return;
+
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const targetId = btn.id.replace('tab-', 'content-');
+            const targetContent = document.getElementById(targetId);
+            
+            if (!targetContent) return;
+
+            tabBtns.forEach(b => {
+                b.classList.remove('border-b-2', 'border-primary', 'text-primary', 'active');
+                b.classList.add('text-[#BCC1CF]');
+            });
+
+            btn.classList.remove('text-[#BCC1CF]');
+            btn.classList.add('border-b-2', 'border-primary', 'text-primary', 'active');
+
+            tabContents.forEach(content => {
+                content.classList.add('hidden');
+            });
+
+            targetContent.classList.remove('hidden');
+        });
+    });
+};
 
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => {
@@ -159,6 +188,7 @@ if (document.readyState === 'loading') {
         initSwiper();
         initHeaderScroll();
         initMobileMenu();
+        initTabs();
     });
 } else {
     initPageTransitions();
@@ -166,6 +196,7 @@ if (document.readyState === 'loading') {
     initSwiper();
     initHeaderScroll();
     initMobileMenu();
+    initTabs();
 }
 
 document.addEventListener('DOMContentLoaded', () => {
