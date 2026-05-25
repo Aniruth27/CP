@@ -18,6 +18,7 @@ export default merge(common, {
         filename: "js/[name].[contenthash].js",
         path: path.resolve(__dirname, "dist"),
         assetModuleFilename: "assets/[name][ext]",
+        publicPath: "/",
         clean: true,
     },
 
