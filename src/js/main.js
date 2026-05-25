@@ -1,5 +1,5 @@
-import '../assets/CP_Main_Catalogue.pdf';
-import '../assets/CP_Mini_Catalogue.pdf';
+import '../assets/cp-main-catalogue.pdf';
+import '../assets/cp-mini-catalogue.pdf';
 
 const initPageTransitions = () => {
 

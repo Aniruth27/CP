@@ -45,8 +45,10 @@ export default {
                                 tag: "a",
                                 attribute: "href",
                                 type: "src",
-                                filter: (tag, attribute, value, resourcePath) => {
-                                    return /\.pdf$/i.test(value);
+                                filter: (tag, attribute, attributes, resourcePath) => {
+                                    const attrObj = Array.isArray(attributes) ? attributes.find(attr => attr.name === attribute) : null;
+                                    const value = attrObj ? attrObj.value : undefined;
+                                    return value && /\.pdf$/i.test(value);
                                 },
                             },
                         ],
