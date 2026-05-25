@@ -19,6 +19,7 @@ const initPageTransitions = () => {
             link.href &&
             link.href.startsWith(window.location.origin) &&
             !link.getAttribute('target') &&
+            !link.getAttribute('download') &&
             !link.href.includes('#')
         ) {
             e.preventDefault();
