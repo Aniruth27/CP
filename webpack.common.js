@@ -27,6 +27,7 @@ export default {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].[contenthash].js',
         assetModuleFilename: 'assets/[name][ext]',
+        publicPath: "/",
         clean: true,
     },
 
@@ -48,7 +49,7 @@ export default {
                                 filter: (tag, attribute, attributes, resourcePath) => {
                                     const attrObj = Array.isArray(attributes) ? attributes.find(attr => attr.name === attribute) : null;
                                     const value = attrObj ? attrObj.value : undefined;
-                                    return value && /\.pdf$/i.test(value);
+                                    return value && /\.pdf$/i.test(value) && !value.startsWith('/');
                                 },
                             },
                         ],
