@@ -1,5 +1,5 @@
-import '../assets/CP_Main_Catalogue.pdf';
-import '../assets/CP_Mini_Catalogue.pdf';
+import '../assets/cp-main-catalogue.pdf';
+import '../assets/cp-mini-catalogue.pdf';
 
 const initPageTransitions = () => {
 
@@ -19,6 +19,7 @@ const initPageTransitions = () => {
             link.href &&
             link.href.startsWith(window.location.origin) &&
             !link.getAttribute('target') &&
+            !link.getAttribute('download') &&
             !link.href.includes('#')
         ) {
             e.preventDefault();
@@ -37,6 +38,58 @@ const initPageTransitions = () => {
     window.addEventListener('pageshow', (event) => {
         if (event.persisted && loader) {
             loader.classList.remove('animate');
+        }
+    });
+};
+
+
+const initPdfDownloads = () => {
+    const downloadFile = async (url, filename) => {
+        const loader = document.getElementById('page-loader');
+        try {
+            if (loader) loader.classList.add('animate');
+
+            const response = await fetch(url);
+            if (!response.ok) throw new Error('Failed to fetch file');
+            
+            const blob = await response.blob();
+            const blobUrl = window.URL.createObjectURL(blob);
+            
+            const a = document.createElement('a');
+            a.style.display = 'none';
+            a.href = blobUrl;
+            a.download = filename || url.split('/').pop();
+            
+            document.body.appendChild(a);
+            a.click();
+            
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(blobUrl);
+
+            if (loader) {
+                setTimeout(() => {
+                    loader.classList.remove('animate');
+                }, 500);
+            }
+        } catch (error) {
+            console.error('JS download failed, falling back to tab open:', error);
+            window.open(url, '_blank');
+            if (loader) {
+                setTimeout(() => {
+                    loader.classList.remove('animate');
+                }, 500);
+            }
+        }
+    };
+
+    document.addEventListener('click', (e) => {
+        const link = e.target.closest('a');
+        if (link && link.href && /\.pdf$/i.test(link.href)) {
+            const isDownload = link.getAttribute('download');
+            if (isDownload) {
+                e.preventDefault();
+                downloadFile(link.href, isDownload);
+            }
         }
     });
 };
@@ -151,21 +204,54 @@ const initMobileMenu = () => {
     }
 };
 
+const initTabs = () => {
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    if (tabBtns.length === 0 || tabContents.length === 0) return;
+
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const targetId = btn.id.replace('tab-', 'content-');
+            const targetContent = document.getElementById(targetId);
+            
+            if (!targetContent) return;
+
+            tabBtns.forEach(b => {
+                b.classList.remove('border-b-2', 'border-primary', 'text-primary', 'active');
+                b.classList.add('text-[#BCC1CF]');
+            });
+
+            btn.classList.remove('text-[#BCC1CF]');
+            btn.classList.add('border-b-2', 'border-primary', 'text-primary', 'active');
+
+            tabContents.forEach(content => {
+                content.classList.add('hidden');
+            });
+
+            targetContent.classList.remove('hidden');
+        });
+    });
+};
 
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => {
         initPageTransitions();
+        initPdfDownloads();
         initIcons();
         initSwiper();
         initHeaderScroll();
         initMobileMenu();
+        initTabs();
     });
 } else {
     initPageTransitions();
+    initPdfDownloads();
     initIcons();
     initSwiper();
     initHeaderScroll();
     initMobileMenu();
+    initTabs();
 }
 
 document.addEventListener('DOMContentLoaded', () => {
